@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>报告的标题</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">报告的标题</h1>
+<p class='attribute'><strong>测试人员 : </strong> yuxx</p>
+<p class='attribute'><strong>开始时间 : </strong> 2023-03-05 19:56:01</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:39.877625</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 28，通过 25，失败 3，通过率= 89.29%</p>
+
+<p class='description'>报告的描述信息</p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 89.29% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 3 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 25 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 28 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='failClass warning'>
+    <td>test_buildProject.TestBuildProject</td>
+    <td class="text-center">4</td>
+    <td class="text-center">3</td>
+    <td class="text-center">1</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_buildProject_1: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
+    <pre>
+    
+pt1_1: {"msg":"处理成功","cookieKey":"855dce8aa28eba069d65e45d0cca2064","code":200,"obj":{"loginTime":1678017362000,"loginName":"gld_ld","sessionId":"online_9166_79121445eb144f27b8cc94240c8a4678","userType":"1","userName":"lid","userId":"2618028d2e5744cc9fd4f468a3b870f6"},"cookieValue":"online_9166_79121445eb144f27b8cc94240c8a4678","jumpHref":"/detection","roleList":[{"cookieKey":"855dce8aa28eba069d65e45d0cca2064","roleName":"开标人","roleUrl":"/detection","roleNumber":"1"}]}
+预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1678017362000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_79121445eb144f27b8cc94240c8a4678', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_79121445eb144f27b8cc94240c8a4678', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_buildProject_2: 获取文件上传路径</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in" align="left">
+    <pre>
+    
+pt1_2: {"msg":"操作成功","code":"200","prepareBidUrl":"http://10.0.106.3:19005/fileSystem/uploadFile","secretKey":"12345","outNetUrl":"/fileSystem/uploadFile","appId":"gbes","fileUrl":"http://10.0.106.3:19005/fileSystem/uploadFile","logicPath":"998b874c9fc94aba860919aad2bd980c/bidSectionId/openBid/tenderFile/"}
+预期结果：{'msg': '操作成功', 'code': '200'}
+实际结果：{'msg': '操作成功', 'code': '200', 'prepareBidUrl': 'http://10.0.106.3:19005/fileSystem/uploadFile', 'secretKey': '12345', 'outNetUrl': '/fileSystem/uploadFile', 'appId': 'gbes', 'fileUrl': 'http://10.0.106.3:19005/fileSystem/uploadFile', 'logicPath': '998b874c9fc94aba860919aad2bd980c/bidSectionId/openBid/tenderFile/'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_3' class='none'>
+    <td class='failCase'><div class='testcase'>test_buildProject_3: 上传文件</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>失败</button>
+    <div id='div_ft1_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_3'>失败</button>
+    <div id='div_ft1_3' class="collapse in" align="left">
+    <pre>
+    
+ft1_3: {"code":500,"msg":"服务器异常:Required request part 'file' is not present","errorMsg":null,"data":null,"time":"2023-03-05T11:56:02.565Z"}
+预期结果：{'msg': '操作成功', 'code': '200'}
+实际结果：{'code': 500, 'msg': "服务器异常:Required request part 'file' is not present", 'errorMsg': None, 'data': None, 'time': '2023-03-05T11:56:02.565Z'}
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\lib\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 70, in test_buildProject
+    raise e
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 63, in test_buildProject
+    self.assertEqual(result["code"],expected["code"])
+AssertionError: 500 != '200'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_buildProject_4: 新建项目</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in" align="left">
+    <pre>
+    
+pt1_4: {"msg":"操作成功","code":200,"obj":{"tenderName":"test-221220-水利监理-LL","industryType":"水利","bidSectionList":[{"bidSectionName":"test-221220-水利监理-LL","reviewWay":"ZGHS","professionalType":"监理","isQualification":"0","bidSectionCode":"test-221220-水利监理-LL","isNew":"1","tenderMethod":1,"bidSectionId":"dfe4bb3fda40f893156b03a98b844a7e"}],"projectCode":"test-221220-水利监理-LL","projectName":"test-221220-水利监理-LL","projectId":"c48264b3d3f3b833a1250a6a8e3a9890"}}
+预期结果：{'msg': '操作成功', 'code': 200}
+实际结果：{'msg': '操作成功', 'code': 200, 'obj': {'tenderName': 'test-221220-水利监理-LL', 'industryType': '水利', 'bidSectionList': [{'bidSectionName': 'test-221220-水利监理-LL', 'reviewWay': 'ZGHS', 'professionalType': '监理', 'isQualification': '0', 'bidSectionCode': 'test-221220-水利监理-LL', 'isNew': '1', 'tenderMethod': 1, 'bidSectionId': 'dfe4bb3fda40f893156b03a98b844a7e'}], 'projectCode': 'test-221220-水利监理-LL', 'projectName': 'test-221220-水利监理-LL', 'projectId': 'c48264b3d3f3b833a1250a6a8e3a9890'}}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='failClass warning'>
+    <td>test_login.TestLogin</td>
+    <td class="text-center">5</td>
+    <td class="text-center">3</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',5)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_1: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in" align="left">
+    <pre>
+    
+pt2_1: 预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1678017380000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_0d732c131ad447319817dac137b0cb4f', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_0d732c131ad447319817dac137b0cb4f', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft2_2' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_2: 账号为空</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_2'>失败</button>
+    <div id='div_ft2_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_2'>失败</button>
+    <div id='div_ft2_2' class="collapse in" align="left">
+    <pre>
+    
+ft2_2: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '请输入验证码', 'code': '3001'}
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\lib\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_login.py", line 40, in test_login
+    raise e
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"] or 3001)
+AssertionError: '3001' != 1007
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_3: 密码为空</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in" align="left">
+    <pre>
+    
+pt2_3: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '账号或密码错误', 'code': 1007}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft2_4' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_4: 账号错误</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_4'>失败</button>
+    <div id='div_ft2_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_4'>失败</button>
+    <div id='div_ft2_4' class="collapse in" align="left">
+    <pre>
+    
+ft2_4: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '请输入验证码', 'code': '3001'}
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\lib\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_login.py", line 40, in test_login
+    raise e
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"] or 3001)
+AssertionError: '3001' != 1007
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_5: 密码错误</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse in" align="left">
+    <pre>
+    
+pt2_5: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '账号或密码错误', 'code': 1007}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_openBidSchedule.TestOpenBidSchedule</td>
+    <td class="text-center">16</td>
+    <td class="text-center">16</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',16)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_01: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in" align="left">
+    <pre>
+    
+pt3_1: 预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1678017381000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_690b78e9ec80429cb58dff3cd2d897ff', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_690b78e9ec80429cb58dff3cd2d897ff', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_02: 新建项目</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse in" align="left">
+    <pre>
+    
+pt3_2: 预期结果：{'msg': '操作成功', 'code': 200}
+实际结果：{'msg': '操作成功', 'code': 200, 'obj': {'tenderName': 'test-221220-水利监理-LL', 'industryType': '水利', 'bidSectionList': [{'bidSectionName': 'test-221220-水利监理-LL', 'reviewWay': 'ZGHS', 'professionalType': '监理', 'isQualification': '0', 'bidSectionCode': 'test-221220-水利监理-LL', 'isNew': '1', 'tenderMethod': 1, 'bidSectionId': '508627ef4d2f3a198eb5232dc05b6766'}], 'projectCode': 'test-221220-水利监理-LL', 'projectName': 'test-221220-水利监理-LL', 'projectId': '5e15554e47bd9eb73c74d2c9b88d7e60'}}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_03: 查询当天项目列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse in" align="left">
+    <pre>
+    
+pt3_3: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'list': [{'projectId': '5e15554e47bd9eb73c74d2c9b88d7e60', 'projectCode': 'test-221220-水利监理-LL', 'projectName': 'test-221220-水利监理-LL', 'region': '海南', 'industryName': '水利', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-05 10:32:44', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'c70170e3a2051b7245e34b16bda49001', 'projectId': '5e15554e47bd9eb73c74d2c9b88d7e60', 'projectCode': 'test-221220-水利监理-LL', 'projectName': 'test-221220-水利监理-LL', 'region': '海南', 'industryName': '水利', 'professionTypeName': '监理', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '508627ef4d2f3a198eb5232dc05b6766', 'bidSectionCode': 'test-221220-水利监理-LL', 'bidSectionName': 'test-221220-水利监理-LL', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '210b37f2d7e6865bd5775525a85b1dd7', 'openStateName': '未开标', 'openState': 0, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-05 10:32:44', 'openTimeOrder': '2023-03-05 10:32:44', 'openRoom': '1', 'openFinishTime': '', 'tenderName': 'test-221220-水利监理-LL', 'tenderAgencyName': None, 'evbidId': 'e26e9b2d99b0d13340b1acd9fb586b2c', 'tradingPlace': None, 'evalStateName': '未开标', 'evalState': 0, 'evalTime': '2023-03-05 10:32:46', 'evalTimeOrder': '2023-03-05 10:32:46', 'evalRoom': '1', 'remote': True, 'unionSection': False}]}]}, 'time': '2023-03-05T11:56:38.540Z'}
+c70170e3a2051b7245e34b16bda49001
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_04: 获取跳转路径</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
+    <div id='div_pt3_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_4'>通过</button>
+    <div id='div_pt3_4' class="collapse in" align="left">
+    <pre>
+    
+pt3_4: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': '/index/bidOpen', 'time': '2023-03-05T11:56:38.705Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_05: 进入项目</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
+    <div id='div_pt3_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_5'>通过</button>
+    <div id='div_pt3_5' class="collapse in" align="left">
+    <pre>
+    
+pt3_5: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'list': [{'stage': 0, 'menus': [{'menuName': '开标准备', 'url': '/index/bidOpen', 'index': 1, 'type': '开标准备', 'status': 0}, {'menuName': '公布投标人情况', 'url': '/index/pubBidder', 'index': 2, 'type': '公布投标人名单', 'status': 0}, {'menuName': '投标文件解密', 'url': '/index/fileDecrypt', 'index': 3, 'type': '投标文件解密', 'status': 0}, {'menuName': '唱标', 'url': '/index/readBid', 'index': 4, 'type': '唱标', 'status': 0}, {'menuName': '开标结束', 'url': '/index/openFinish', 'index': 5, 'type': '开标结束', 'status': 0}]}]}, 'time': '2023-03-05T11:56:38.850Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_06: 打开【新增投标单位】弹框</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_6'>通过</button>
+    <div id='div_pt3_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_6'>通过</button>
+    <div id='div_pt3_6' class="collapse in" align="left">
+    <pre>
+    
+pt3_6: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'list': [{'bidSectionId': '508627ef4d2f3a198eb5232dc05b6766', 'bidSectionCode': 'test-221220-水利监理-LL', 'bidSectionName': 'test-221220-水利监理-LL', 'projectId': '5e15554e47bd9eb73c74d2c9b88d7e60', 'encryptionLevel': '1', 'bidResult': 0, 'openBidList': [{'openBidId': '210b37f2d7e6865bd5775525a85b1dd7', 'stage': 0, 'openBidTime': '2023-03-05 10:32:44', 'openBidState': 0}], 'tenderCtrlAmount': '12345.000000', 'provisionalMoney': '0', 'proEstimate': '0', 'hasCostPrice': 0, 'costPrice': None}]}, 'time': '2023-03-05T11:56:38.963Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_07: 添加投标人成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_7'>通过</button>
+    <div id='div_pt3_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_7'>通过</button>
+    <div id='div_pt3_7' class="collapse in" align="left">
+    <pre>
+    
+pt3_7: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': None, 'time': '2023-03-05T11:56:39.191Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_08: 重复添加投标人</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_8'>通过</button>
+    <div id='div_pt3_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_8'>通过</button>
+    <div id='div_pt3_8' class="collapse in" align="left">
+    <pre>
+    
+pt3_8: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': None, 'time': '2023-03-05T11:56:39.325Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_09: 查询投标人列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_9'>通过</button>
+    <div id='div_pt3_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_9'>通过</button>
+    <div id='div_pt3_9' class="collapse in" align="left">
+    <pre>
+    
+pt3_9: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'dataList': [{'bidSectionId': '508627ef4d2f3a198eb5232dc05b6766', 'bidderId': '92cbe72ab3464d1c90404800dea4aea9', 'bidderName': '2', 'singedId': 'efbe3ca2a9954435a318c807efefeb74', 'signedTimeDate': None, 'signedTime': None, 'signedState': 0, 'signedIdcard': None, 'signedPhone': None, 'signedName': None, 'cashDepositState': -1, 'fileState': 0, 'remark': '', 'depositPayType': 0}], 'total': 1, 'current': 1}, 'time': '2023-03-05T11:56:39.473Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_10: 投标文件已递交</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_10'>通过</button>
+    <div id='div_pt3_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_10'>通过</button>
+    <div id='div_pt3_10' class="collapse in" align="left">
+    <pre>
+    
+pt3_10: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:39.659Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_11: 保证金未要求</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_11'>通过</button>
+    <div id='div_pt3_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_11'>通过</button>
+    <div id='div_pt3_11' class="collapse in" align="left">
+    <pre>
+    
+pt3_11: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:39.845Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_12: 保证金未递交</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_12'>通过</button>
+    <div id='div_pt3_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_12'>通过</button>
+    <div id='div_pt3_12' class="collapse in" align="left">
+    <pre>
+    
+pt3_12: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:40.010Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_13: 保证经已递交</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_13'>通过</button>
+    <div id='div_pt3_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_13'>通过</button>
+    <div id='div_pt3_13' class="collapse in" align="left">
+    <pre>
+    
+pt3_13: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:40.210Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_14: 确认投标人</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_14'>通过</button>
+    <div id='div_pt3_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_14'>通过</button>
+    <div id='div_pt3_14' class="collapse in" align="left">
+    <pre>
+    
+pt3_14: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:40.485Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_15: 撤销确认</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_15'>通过</button>
+    <div id='div_pt3_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_15'>通过</button>
+    <div id='div_pt3_15' class="collapse in" align="left">
+    <pre>
+    
+pt3_15: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:40.633Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_16' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_16: 全部确认</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_16'>通过</button>
+    <div id='div_pt3_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_16'>通过</button>
+    <div id='div_pt3_16' class="collapse in" align="left">
+    <pre>
+    
+pt3_16: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': True, 'time': '2023-03-05T11:56:40.837Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_searchProjectList.TestSearchProjectList</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',3)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_searchProjectList_1: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse in" align="left">
+    <pre>
+    
+pt4_1: 预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1678017400000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_2597ecf3fef14411889adc79ee297107', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_2597ecf3fef14411889adc79ee297107', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_searchProjectList_2: 查询当天项目列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
+    <div id='div_pt4_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
+    <div id='div_pt4_2' class="collapse in" align="left">
+    <pre>
+    
+pt4_2: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'list': []}, 'time': '2023-03-05T11:56:41.120Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_searchProjectList_3: 查询历史项目列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse in" align="left">
+    <pre>
+    
+pt4_3: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'projectList': [{'projectId': '1f003730aa59761eea19bb3580084f1a', 'projectCode': 'test房建施工简易评估法110220', 'projectName': 'test房建施工简易评估法110220', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-03 17:23:11', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'e579e6201cb6b502372f42835b7d01cc', 'projectId': '1f003730aa59761eea19bb3580084f1a', 'projectCode': 'test房建施工简易评估法110220', 'projectName': 'test房建施工简易评估法110220', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'f1da427c368ad316cee67f8e6404d1c2', 'bidSectionCode': 'test房建施工简易评估法110220', 'bidSectionName': 'test房建施工简易评估法110220', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'ce98623bf9b3f7ee9a149ddb135a1513', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-03 17:23:11', 'openTimeOrder': '2023-03-03 17:23:11', 'openRoom': '3', 'openFinishTime': '2023-03-03 17:57:16', 'tenderName': 'aa', 'tenderAgencyName': 'aa', 'evbidId': '0febabaa6773c2c43b7125b4528da59a', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-03 17:23:13', 'evalTimeOrder': '2023-03-03 17:23:13', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '5adf59f5143d78930eeb614f05286448', 'projectCode': 'test房建施工简易评估法0220-4', 'projectName': 'test房建施工简易评估法0220-4', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-03 17:21:29', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '40ea69f71883e6bf4f6c468579bcbb2d', 'projectId': '5adf59f5143d78930eeb614f05286448', 'projectCode': 'test房建施工简易评估法0220-4', 'projectName': 'test房建施工简易评估法0220-4', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '649b24b62fcc3f5ec38db2f7a65a62f1', 'bidSectionCode': 'test房建施工简易评估法0220-4', 'bidSectionName': 'test房建施工简易评估法0220-4', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '0d2d42cb1c1e20b363f32f65341aef9b', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-03 17:21:29', 'openTimeOrder': '2023-03-03 17:21:29', 'openRoom': '3', 'openFinishTime': '', 'tenderName': 'aa', 'tenderAgencyName': 'aa', 'evbidId': 'be34a6d10485cb30fd1bf992a2d6c8d7', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-03-03 17:21:31', 'evalTimeOrder': '2023-03-03 17:21:31', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '29595d5efa2796b70fe3625ca3239ee8', 'projectCode': 'test房建施工综合评估法0221', 'projectName': '勿动-房建施工-BIM标测试', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-02 16:58:05', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '1021ac9dfca9838bdc561d54101a7b38', 'projectId': '29595d5efa2796b70fe3625ca3239ee8', 'projectCode': 'test房建施工综合评估法0221', 'projectName': '勿动-房建施工-BIM标测试', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '806cb8756c11f6e516428b3d1cd28a7d', 'bidSectionCode': 'test房建施工综合评估法0221', 'bidSectionName': 'test房建施工综合评估法0221', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '6e5f5fa2e71ce876766ee24f59ef2c24', 'openStateName': '评标结束', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-02 16:58:05', 'openTimeOrder': '2023-03-02 16:58:05', 'openRoom': '1', 'openFinishTime': '2023-03-02 17:35:03', 'tenderName': 'aa', 'tenderAgencyName': None, 'evbidId': '4d9a879a596f8c45eabe17c605775f14', 'tradingPlace': None, 'evalStateName': '评标结束', 'evalState': 2, 'evalTime': '2023-03-02 16:58:07', 'evalTimeOrder': '2023-03-02 16:58:07', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': 'fy90e2dfa5f9e64b0a982cad0576c8ae67', 'projectCode': 'test房建施工综合评估法0221', 'projectName': '勿动-房建施工-BIM标测试-第2次复议', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-02 16:58:05', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'fy91a9db05479f40a9a63b5d46c094c94a', 'projectId': 'fy90e2dfa5f9e64b0a982cad0576c8ae67', 'projectCode': 'test房建施工综合评估法0221', 'projectName': '勿动-房建施工-BIM标测试-第2次复议', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'fy965355ea72fa490f97e46d6e606e8ba1', 'bidSectionCode': 'test房建施工综合评估法0221', 'bidSectionName': 'test房建施工综合评估法0221-第2次复议', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'fydc08907e425a4798bbba9686a773dc5f', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-02 16:58:05', 'openTimeOrder': '2023-03-02 16:58:05', 'openRoom': '1', 'openFinishTime': '2023-03-02 17:35:03', 'tenderName': 'aa', 'tenderAgencyName': None, 'evbidId': 'fy47ef60a41c5c4132adb10f0a5f65c62d', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-02 17:52:50', 'evalTimeOrder': '2023-03-02 17:52:50', 'evalRoom': '2', 'remote': False, 'unionSection': False}]}, {'projectId': 'fyd2e69da7a4114bfb9f3c1e854f9a3055', 'projectCode': 'test房建施工综合评估法0221', 'projectName': '勿动-房建施工-BIM标测试-第1次复议', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-02 16:58:05', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'fybad8249cd070403fb06f972d23187337', 'projectId': 'fyd2e69da7a4114bfb9f3c1e854f9a3055', 'projectCode': 'test房建施工综合评估法0221', 'projectName': '勿动-房建施工-BIM标测试-第1次复议', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'fyf315895c18904336acb4e7d2a72ee4a6', 'bidSectionCode': 'test房建施工综合评估法0221', 'bidSectionName': 'test房建施工综合评估法0221-第1次复议', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'fy4bb579ff20ec469080c355a8e9533cd2', 'openStateName': '评标结束', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-02 16:58:05', 'openTimeOrder': '2023-03-02 16:58:05', 'openRoom': '1', 'openFinishTime': '2023-03-02 17:35:03', 'tenderName': 'aa', 'tenderAgencyName': None, 'evbidId': 'fy9a7610e11f0c49c29094fe9fd5d7c127', 'tradingPlace': None, 'evalStateName': '评标结束', 'evalState': 2, 'evalTime': '2023-03-02 17:48:24', 'evalTimeOrder': '2023-03-02 17:48:24', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': '77e4224b676f87de9598c0d7b5f0464c', 'projectCode': 'test房建施工简易评估法0220-3', 'projectName': 'test房建施工简易评估法0220-3', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-02 11:05:48', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '84c52fd053a3a5a65b54f52521c1a7e9', 'projectId': '77e4224b676f87de9598c0d7b5f0464c', 'projectCode': 'test房建施工简易评估法0220-3', 'projectName': 'test房建施工简易评估法0220-3', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'a6b9680f97df6b135783c04fcccc718c', 'bidSectionCode': 'test房建施工简易评估法0220-3', 'bidSectionName': 'test房建施工简易评估法0220-3', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '093556cf0c73e5ecb3edcdc9cf1af654', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-02 11:05:48', 'openTimeOrder': '2023-03-02 11:05:48', 'openRoom': '3', 'openFinishTime': '2023-03-02 11:13:02', 'tenderName': 'aa', 'tenderAgencyName': 'aa', 'evbidId': 'aaa7be6e994a5f6576fde308304ba5f0', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-02 11:05:51', 'evalTimeOrder': '2023-03-02 11:05:51', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '264e969485d9e7c10dc017051581be64', 'projectCode': 'test房建施工简易评估法0220-2', 'projectName': 'test房建施工简易评估法0220-2', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-01 16:58:54', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '745c708f1131e68c76b1b069f8a115da', 'projectId': '264e969485d9e7c10dc017051581be64', 'projectCode': 'test房建施工简易评估法0220-2', 'projectName': 'test房建施工简易评估法0220-2', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '1dd5182464e778ea6296c09dbf633344', 'bidSectionCode': 'test房建施工简易评估法0220-2', 'bidSectionName': 'test房建施工简易评估法0220-2', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'a438f250e3563c903155ddeac6086b11', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-01 16:58:54', 'openTimeOrder': '2023-03-01 16:58:54', 'openRoom': '3', 'openFinishTime': '2023-03-02 10:39:42', 'tenderName': 'aa', 'tenderAgencyName': 'aa', 'evbidId': '99525807a6ade42ddeb74f80550218cf', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-01 17:01:42', 'evalTimeOrder': '2023-03-01 17:01:42', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '6c1a526516c9d18ee547517b8ae3cada', 'projectCode': 'test房建施工简易评估法0220-1', 'projectName': 'test房建施工简易评估法0220-1', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-01 16:17:14', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '91460aa4ad12e78f8ea6360a3208ef7e', 'projectId': '6c1a526516c9d18ee547517b8ae3cada', 'projectCode': 'test房建施工简易评估法0220-1', 'projectName': 'test房建施工简易评估法0220-1', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '8c6853856539957d0f568c7d0562582e', 'bidSectionCode': 'test房建施工简易评估法0220-1', 'bidSectionName': 'test房建施工简易评估法0220-1', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '1157b4c90367591ea362d79d43ea5744', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-01 16:17:14', 'openTimeOrder': '2023-03-01 16:17:14', 'openRoom': '3', 'openFinishTime': '2023-03-01 16:24:34', 'tenderName': 'aa', 'tenderAgencyName': 'aa', 'evbidId': 'e52375bdd67448e937abf33e4556d797', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-01 16:17:16', 'evalTimeOrder': '2023-03-01 16:17:16', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '202277d8a4658db8f97e9f7d27e04697', 'projectCode': 'test房建施工简易评估法0220', 'projectName': 'test房建施工简易评估法0220', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-01 16:07:41', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '8546cd1ccbb11d77fbdc353a802ceaac', 'projectId': '202277d8a4658db8f97e9f7d27e04697', 'projectCode': 'test房建施工简易评估法0220', 'projectName': 'test房建施工简易评估法0220', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '915c241142ac0d46bb9abe401ac12dcb', 'bidSectionCode': 'test房建施工简易评估法0220', 'bidSectionName': 'test房建施工简易评估法0220', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '383b2ba47c128fc6271d025cccbd1805', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-01 16:07:41', 'openTimeOrder': '2023-03-01 16:07:41', 'openRoom': '3', 'openFinishTime': '', 'tenderName': 'aa', 'tenderAgencyName': 'aa', 'evbidId': 'aec9fc685e1c9068af042a424db641bd', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-03-01 16:07:44', 'evalTimeOrder': '2023-03-01 16:07:44', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '0793fd0142941907ca8c9e53cd2defe3', 'projectCode': '水利确认有效投标单位', 'projectName': '水利确认有效投标单位', 'region': '海南', 'industryName': '水利', 'bidSectionNumber': 3, 'openTimeOrder': '2023-03-01 14:48:32', 'isRemote': None, 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '4393e4b6ea82ff9531c8dc0121adc7fb', 'projectId': '0793fd0142941907ca8c9e53cd2defe3', 'projectCode': '水利确认有效投标单位', 'projectName': '水利确认有效投标单位', 'region': '海南', 'industryName': '水利', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '08d59205ec339739276abb3710dac181', 'bidSectionCode': '水利确认有效投标单位', 'bidSectionName': '水利确认有效投标单位', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'dd6e007f675bbc6438f921aebe1a336f', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-01 14:48:32', 'openTimeOrder': '2023-03-01 14:48:32', 'openRoom': '1', 'openFinishTime': '', 'tenderName': '中国远洋', 'tenderAgencyName': '中建联勘测规划设计有限公司', 'evbidId': '899f66a2b2f0ec1d67d85189062469c7', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-03-01 14:48:34', 'evalTimeOrder': '2023-03-01 14:48:34', 'evalRoom': '1', 'remote': False, 'unionSection': False}, {'domainId': '577afe3ca7e6416662359136eb20f513', 'projectId': '0793fd0142941907ca8c9e53cd2defe3', 'projectCode': '水利确认有效投标单位', 'projectName': '水利确认有效投标单位', 'region': '海南', 'industryName': '水利', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'cee75afceee8fdde62a2354c5aa501ed', 'bidSectionCode': '水利确认有效投标单位2', 'bidSectionName': '水利确认有效投标单位2', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'ae71d1cec36a489e41dea0a2ddcaeddd', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-02-28 19:05:02', 'openTimeOrder': '2023-02-28 19:05:02', 'openRoom': '1', 'openFinishTime': '', 'tenderName': '中国远洋', 'tenderAgencyName': '中建联勘测规划设计有限公司', 'evbidId': '3947a38eca6475b821b59de50cb1853d', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-02-28 19:05:04', 'evalTimeOrder': '2023-02-28 19:05:04', 'evalRoom': '1', 'remote': False, 'unionSection': False}, {'domainId': '3595ee5fc1819a3c51d7cefe32e2a385', 'projectId': '0793fd0142941907ca8c9e53cd2defe3', 'projectCode': '水利确认有效投标单位', 'projectName': '水利确认有效投标单位', 'region': '海南', 'industryName': '水利', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'afb58804fe69ef47f7d2c5fea0cbaf03', 'bidSectionCode': '水利确认有效投标单位1', 'bidSectionName': '水利确认有效投标单位1', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'ad76066e60334475889b7c87ec362237', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-02-28 15:05:55', 'openTimeOrder': '2023-02-28 15:05:55', 'openRoom': '1', 'openFinishTime': '', 'tenderName': '中国远洋', 'tenderAgencyName': '中建联勘测规划设计有限公司', 'evbidId': 'ca5c508161a0afea41406170388e5e23', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-02-28 15:05:56', 'evalTimeOrder': '2023-02-28 15:05:56', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}], 'pageTotal': 389, 'pageIndex': 1}, 'time': '2023-03-05T11:56:41.681Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>28</td>
+    <td>25</td>
+    <td>3</td>
+    <td>0</td>
+    <td>通过率：89.29%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
