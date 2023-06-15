@@ -7,7 +7,7 @@
 
 import unittest
 
-from lib.HTMLTestRunnerNew import HTMLTestRunner
+from library.HTMLTestRunnerNew import HTMLTestRunner
 
 from common.readexcel import ReadExcel
 from common.contents import TESTCASES_DIR
