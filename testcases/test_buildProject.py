@@ -1,5 +1,5 @@
 import unittest
-from lib.ddt import ddt, data
+from library.ddt import ddt, data
 from common.readexcel import ReadExcel
 import os
 from common.contents import DATA_DIR, RESOURCES_DIR

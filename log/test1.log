@@ -10585,3 +10585,15 @@ AssertionError: '3001' != 1007
 2023-06-14 15:28:22,390 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
 2023-06-14 15:28:22,597 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
 2023-06-14 15:28:23,400 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-15 17:52:43,263 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-15 17:52:43,397 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-15 17:52:43,655 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-15 17:52:43,970 - [test_login.py-->line:43] - INFO: 用例：账号为空执行通过
+2023-06-15 17:52:44,296 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-15 17:52:44,456 - [test_login.py-->line:43] - INFO: 用例：账号错误执行通过
+2023-06-15 17:52:44,670 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-15 17:52:44,868 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-15 17:52:45,105 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-15 17:52:45,299 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-15 17:52:45,418 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-15 17:52:45,607 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过

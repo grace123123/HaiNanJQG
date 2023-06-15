@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">报告的标题</h1>
 <p class='attribute'><strong>测试人员 : </strong> yuxx</p>
-<p class='attribute'><strong>开始时间 : </strong> 2023-06-15 17:50:18</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.000997</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 4，错误 4，通过率= 0.00%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2023-06-15 17:52:43</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.601844</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 39，通过 12，错误 27，通过率= 30.77%</p>
 
 <p class='description'>报告的描述信息</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 0.00% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 30.77% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 0 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 4 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 12 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 39 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -149,35 +149,28 @@ function html_escape(s) {
 </tr>
 
 <tr class='errorClass warning'>
-    <td>unittest.loader._FailedTest</td>
+    <td>test_buildProject.TestBuildProject</td>
     <td class="text-center">4</td>
+    <td class="text-center">2</td>
     <td class="text-center">0</td>
-    <td class="text-center">0</td>
-    <td class="text-center">4</td>
+    <td class="text-center">2</td>
     <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
 </tr>
 
-<tr id='ft1_1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_buildProject</div></td>
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_buildProject_1: 登录成功</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse">  -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_1'>错误</button>
-    <div id='div_ft1_1' class="collapse in" align="left">
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in" align="left">
     <pre>
     
-ft1_1: ImportError: Failed to import test module: test_buildProject
-Traceback (most recent call last):
-  File "D:\Python\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\Python\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 2, in &lt;module&gt;
-    from lib.ddt import ddt, data
-ModuleNotFoundError: No module named 'lib.ddt'
-
+pt1_1: {"msg":"处理成功","cookieKey":"855dce8aa28eba069d65e45d0cca2064","code":200,"obj":{"loginTime":1686822763000,"loginName":"gld_ld","sessionId":"online_9166_d22151ba03eb408caa47657a5f981ef8","userType":"1","userName":"lid","userId":"2618028d2e5744cc9fd4f468a3b870f6"},"cookieValue":"online_9166_d22151ba03eb408caa47657a5f981ef8","jumpHref":"/detection","roleList":[{"cookieKey":"855dce8aa28eba069d65e45d0cca2064","roleName":"开标人","roleUrl":"/detection","roleNumber":"1"}]}
+预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1686822763000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_d22151ba03eb408caa47657a5f981ef8', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_d22151ba03eb408caa47657a5f981ef8', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
 
 
     </pre>
@@ -185,27 +178,21 @@ ModuleNotFoundError: No module named 'lib.ddt'
     </td>
 </tr>
 
-<tr id='ft1_2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login</div></td>
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_buildProject_2: 获取文件上传路径</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse">  -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>错误</button>
-    <div id='div_ft1_2' class="collapse in" align="left">
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in" align="left">
     <pre>
     
-ft1_2: ImportError: Failed to import test module: test_login
-Traceback (most recent call last):
-  File "D:\Python\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\Python\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "D:\HaiNanJQG\testcases\test_login.py", line 2, in &lt;module&gt;
-    from lib.ddt import ddt, data
-ModuleNotFoundError: No module named 'lib.ddt'
-
+pt1_2: {"msg":"操作成功","code":"200","prepareBidUrl":"http://10.0.106.3:19005/fileSystem/uploadFile","secretKey":"12345","outNetUrl":"/fileSystem/uploadFile","appId":"gbes","fileUrl":"http://10.0.106.3:19005/fileSystem/uploadFile","logicPath":"78d0b61a5307451fbe7bee5c490fbcb9/bidSectionId/openBid/tenderFile/"}
+预期结果：{'msg': '操作成功', 'code': '200'}
+实际结果：{'msg': '操作成功', 'code': '200', 'prepareBidUrl': 'http://10.0.106.3:19005/fileSystem/uploadFile', 'secretKey': '12345', 'outNetUrl': '/fileSystem/uploadFile', 'appId': 'gbes', 'fileUrl': 'http://10.0.106.3:19005/fileSystem/uploadFile', 'logicPath': '78d0b61a5307451fbe7bee5c490fbcb9/bidSectionId/openBid/tenderFile/'}
+logicPath:78d0b61a5307451fbe7bee5c490fbcb9/bidSectionId/openBid/tenderFile/
 
 
     </pre>
@@ -214,7 +201,7 @@ ModuleNotFoundError: No module named 'lib.ddt'
 </tr>
 
 <tr id='ft1_3' class='none'>
-    <td class='errorCase'><div class='testcase'>test_openBidSchedule</div></td>
+    <td class='errorCase'><div class='testcase'>test_buildProject_3: 上传文件</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_3'>错误</button>
@@ -224,16 +211,12 @@ ModuleNotFoundError: No module named 'lib.ddt'
     <div id='div_ft1_3' class="collapse in" align="left">
     <pre>
     
-ft1_3: ImportError: Failed to import test module: test_openBidSchedule
-Traceback (most recent call last):
-  File "D:\Python\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\Python\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 2, in &lt;module&gt;
-    from lib.ddt import ddt, data
-ModuleNotFoundError: No module named 'lib.ddt'
-
+ft1_3: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 37, in test_buildProject
+    file= ("file",("zhao.GZBS",open(r"D:\workFile\jiqiguanshuili\zhao.GZBS", "rb"),"application/octet-stream"))
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\workFile\\jiqiguanshuili\\zhao.GZBS'
 
 
     </pre>
@@ -242,7 +225,7 @@ ModuleNotFoundError: No module named 'lib.ddt'
 </tr>
 
 <tr id='ft1_4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_searchProjectList</div></td>
+    <td class='errorCase'><div class='testcase'>test_buildProject_4: 新建项目</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
     <button id='btn_ft1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_4'>错误</button>
@@ -252,16 +235,1105 @@ ModuleNotFoundError: No module named 'lib.ddt'
     <div id='div_ft1_4' class="collapse in" align="left">
     <pre>
     
-ft1_4: ImportError: Failed to import test module: test_searchProjectList
+ft1_4: {"msg":"解压招标文件失败,原因：文件id为空或者对应的记录不存在","code":"2001"}
+预期结果：{'msg': '操作成功', 'code': 200}
+实际结果：{'msg': '解压招标文件失败,原因：文件id为空或者对应的记录不存在', 'code': '2001'}
 Traceback (most recent call last):
-  File "D:\Python\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\Python\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "D:\HaiNanJQG\testcases\test_searchProjectList.py", line 2, in &lt;module&gt;
-    from lib.ddt import ddt, data
-ModuleNotFoundError: No module named 'lib.ddt'
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 75, in test_buildProject
+    projectId = jsonpath.jsonpath(result, "$..projectId")[0]
+TypeError: 'bool' object is not subscriptable
 
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_login.TestLogin</td>
+    <td class="text-center">5</td>
+    <td class="text-center">5</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',5)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_1: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in" align="left">
+    <pre>
+    
+pt2_1: 预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1686822764000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_6566d442ea924658b3f4da94c26b37cd', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_6566d442ea924658b3f4da94c26b37cd', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_2: 账号为空</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in" align="left">
+    <pre>
+    
+pt2_2: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '账号或密码错误', 'code': 1007}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_3: 密码为空</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in" align="left">
+    <pre>
+    
+pt2_3: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '账号或密码错误', 'code': 1007}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_4: 账号错误</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_4'>通过</button>
+    <div id='div_pt2_4' class="collapse in" align="left">
+    <pre>
+    
+pt2_4: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '账号或密码错误', 'code': 1007}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_5: 密码错误</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_5'>通过</button>
+    <div id='div_pt2_5' class="collapse in" align="left">
+    <pre>
+    
+pt2_5: 预期结果：{'msg': '账号或密码错误', 'code': 1007}
+实际结果：{'msg': '账号或密码错误', 'code': 1007}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_openBidSchedule.TestOpenBidSchedule</td>
+    <td class="text-center">27</td>
+    <td class="text-center">2</td>
+    <td class="text-center">0</td>
+    <td class="text-center">25</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',27)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_01: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in" align="left">
+    <pre>
+    
+pt3_1: 预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1686822765000, 'loginName': 'gld_kb', 'sessionId': 'online_155_ef72bcb701cd45518311b2340d2252ae', 'userType': '7', 'userName': 'zhaobiaodaili', 'userId': '4bf500501d1b44bc90223bc6999df6da'}, 'cookieValue': 'online_155_ef72bcb701cd45518311b2340d2252ae', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '招标代理', 'roleUrl': '/detection', 'roleNumber': '7'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_02: 新建项目</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_2'>错误</button>
+    <div id='div_ft3_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_2'>错误</button>
+    <div id='div_ft3_2' class="collapse in" align="left">
+    <pre>
+    
+ft3_2: 预期结果：{'msg': '操作成功', 'code': 200}
+实际结果：{'msg': '解压招标文件失败,原因：文件id为空或者对应的记录不存在', 'code': '2001'}
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 68, in test_openBidSchedule
+    projectId = jsonpath.jsonpath(result, "$..projectId")[0]
+TypeError: 'bool' object is not subscriptable
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_03: 查询当天项目列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_3'>错误</button>
+    <div id='div_ft3_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_3'>错误</button>
+    <div id='div_ft3_3' class="collapse in" align="left">
+    <pre>
+    
+ft3_3: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'list': []}, 'time': '2023-06-15T09:52:45.683Z'}
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 74, in test_openBidSchedule
+    domainId=jsonpath.jsonpath(result,"$..domainId")[0]
+TypeError: 'bool' object is not subscriptable
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_04: 获取跳转路径</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_4'>错误</button>
+    <div id='div_ft3_4' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_4'>错误</button>
+    <div id='div_ft3_4' class="collapse in" align="left">
+    <pre>
+    
+ft3_4: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_05: 进入项目</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_5' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_5'>错误</button>
+    <div id='div_ft3_5' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_5' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_5'>错误</button>
+    <div id='div_ft3_5' class="collapse in" align="left">
+    <pre>
+    
+ft3_5: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_06: 打开【新增投标单位】弹框</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_6' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_6'>错误</button>
+    <div id='div_ft3_6' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_6' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_6'>错误</button>
+    <div id='div_ft3_6' class="collapse in" align="left">
+    <pre>
+    
+ft3_6: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'domainId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_07: 添加投标人成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_7'>错误</button>
+    <div id='div_ft3_7' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_7'>错误</button>
+    <div id='div_ft3_7' class="collapse in" align="left">
+    <pre>
+    
+ft3_7: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_08: 重复添加投标人</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_8'>错误</button>
+    <div id='div_ft3_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_8'>错误</button>
+    <div id='div_ft3_8' class="collapse in" align="left">
+    <pre>
+    
+ft3_8: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_09: 查询投标人列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_9'>错误</button>
+    <div id='div_ft3_9' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_9'>错误</button>
+    <div id='div_ft3_9' class="collapse in" align="left">
+    <pre>
+    
+ft3_9: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_10: 投标文件已递交</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_10'>错误</button>
+    <div id='div_ft3_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_10'>错误</button>
+    <div id='div_ft3_10' class="collapse in" align="left">
+    <pre>
+    
+ft3_10: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_11' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_11: 保证金未要求</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_11'>错误</button>
+    <div id='div_ft3_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_11'>错误</button>
+    <div id='div_ft3_11' class="collapse in" align="left">
+    <pre>
+    
+ft3_11: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_12: 保证金未递交</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_12'>错误</button>
+    <div id='div_ft3_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_12'>错误</button>
+    <div id='div_ft3_12' class="collapse in" align="left">
+    <pre>
+    
+ft3_12: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_13: 保证经已递交</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_13'>错误</button>
+    <div id='div_ft3_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_13'>错误</button>
+    <div id='div_ft3_13' class="collapse in" align="left">
+    <pre>
+    
+ft3_13: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_14: 确认投标人</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_14'>错误</button>
+    <div id='div_ft3_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_14'>错误</button>
+    <div id='div_ft3_14' class="collapse in" align="left">
+    <pre>
+    
+ft3_14: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_15' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_15: 撤销确认</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_15'>错误</button>
+    <div id='div_ft3_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_15'>错误</button>
+    <div id='div_ft3_15' class="collapse in" align="left">
+    <pre>
+    
+ft3_15: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'singedId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_16' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_16: 全部确认</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_16'>错误</button>
+    <div id='div_ft3_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_16'>错误</button>
+    <div id='div_ft3_16' class="collapse in" align="left">
+    <pre>
+    
+ft3_16: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_17: 跳转到【公布投标人】页</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_17'>错误</button>
+    <div id='div_ft3_17' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_17'>错误</button>
+    <div id='div_ft3_17' class="collapse in" align="left">
+    <pre>
+    
+ft3_17: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 42, in test_openBidSchedule
+    data = replace_data(case["data"]).encode('UTF-8')
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_18: 点击【公布投标人】按钮</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_18'>错误</button>
+    <div id='div_ft3_18' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_18'>错误</button>
+    <div id='div_ft3_18' class="collapse in" align="left">
+    <pre>
+    
+ft3_18: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'domainId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_19' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_19: 跳转到【投标文件解密】页</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_19'>错误</button>
+    <div id='div_ft3_19' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_19'>错误</button>
+    <div id='div_ft3_19' class="collapse in" align="left">
+    <pre>
+    
+ft3_19: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'bidSectionId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_20: 点击【开始解密】</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_20' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_20'>错误</button>
+    <div id='div_ft3_20' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_20' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_20'>错误</button>
+    <div id='div_ft3_20' class="collapse in" align="left">
+    <pre>
+    
+ft3_20: Traceback (most recent call last):
+  File "D:\HaiNanJQG\common\parametric.py", line 21, in replace_data
+    data = data.replace(item, conf.get_str("test_data", key))
+  File "D:\HaiNanJQG\common\config.py", line 30, in get_str
+    return self.conf.get(section, option)
+  File "D:\Python\lib\configparser.py", line 780, in get
+    d = self._unify_values(section, vars)
+  File "D:\Python\lib\configparser.py", line 1146, in _unify_values
+    raise NoSectionError(section) from None
+configparser.NoSectionError: No section: 'test_data'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 23, in replace_data
+    data=data.replace(item, getattr(TestData,key))
+AttributeError: type object 'TestData' has no attribute 'domainId'
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_21' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_openBidSchedule_21: 打开文件上传弹框</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_21' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_21'>通过</button>
+    <div id='div_pt3_21' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_21' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_21'>通过</button>
+    <div id='div_pt3_21' class="collapse in" align="left">
+    <pre>
+    
+pt3_21: 预期结果：{'code': '200', 'msg': '操作成功'}
+实际结果：{'msg': '操作成功', 'code': '200', 'prepareBidUrl': 'http://10.0.106.3:19005/fileSystem/uploadFile', 'secretKey': '12345', 'outNetUrl': '/fileSystem/uploadFile', 'appId': 'gbes', 'fileUrl': 'http://10.0.106.3:19005/fileSystem/uploadFile', 'logicPath': '0361e33d55f44c5eb059e67f2b622c0e/bidSectionId/openBid/tenderFile/'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_22' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_22: 上传加密投标文件</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_22' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_22'>错误</button>
+    <div id='div_ft3_22' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_22' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_22'>错误</button>
+    <div id='div_ft3_22' class="collapse in" align="left">
+    <pre>
+    
+ft3_22: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 48, in test_openBidSchedule
+    json = eval(replace_data(case["data"]))
+  File "D:\HaiNanJQG\common\parametric.py", line 12, in replace_data
+    while re.search(r,data):
+  File "D:\Python\lib\re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_23' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_23: 解密</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_23' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_23'>错误</button>
+    <div id='div_ft3_23' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_23' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_23'>错误</button>
+    <div id='div_ft3_23' class="collapse in" align="left">
+    <pre>
+    
+ft3_23: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+TypeError: can only concatenate str (not "NoneType") to str
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_24' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_24: 跳转到【唱标】页</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_24' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_24'>错误</button>
+    <div id='div_ft3_24' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_24' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_24'>错误</button>
+    <div id='div_ft3_24' class="collapse in" align="left">
+    <pre>
+    
+ft3_24: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+TypeError: can only concatenate str (not "NoneType") to str
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_25' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_25: 唱标</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_25' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_25'>错误</button>
+    <div id='div_ft3_25' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_25' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_25'>错误</button>
+    <div id='div_ft3_25' class="collapse in" align="left">
+    <pre>
+    
+ft3_25: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+TypeError: can only concatenate str (not "NoneType") to str
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_26' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_26: 一键唱标</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_26' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_26'>错误</button>
+    <div id='div_ft3_26' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_26' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_26'>错误</button>
+    <div id='div_ft3_26' class="collapse in" align="left">
+    <pre>
+    
+ft3_26: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+TypeError: can only concatenate str (not "NoneType") to str
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft3_27' class='none'>
+    <td class='errorCase'><div class='testcase'>test_openBidSchedule_27: 开标结束</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft3_27' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_27'>错误</button>
+    <div id='div_ft3_27' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft3_27' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_27'>错误</button>
+    <div id='div_ft3_27' class="collapse in" align="left">
+    <pre>
+    
+ft3_27: Traceback (most recent call last):
+  File "D:\HaiNanJQG\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 30, in test_openBidSchedule
+    url = replace_data(conf.get_str("env", "url") + case["url"])
+TypeError: can only concatenate str (not "NoneType") to str
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_searchProjectList.TestSearchProjectList</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',3)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_searchProjectList_1: 登录成功</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_1'>通过</button>
+    <div id='div_pt4_1' class="collapse in" align="left">
+    <pre>
+    
+pt4_1: 预期结果：{'msg': '处理成功', 'code': 200}
+实际结果：{'msg': '处理成功', 'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'code': 200, 'obj': {'loginTime': 1686822765000, 'loginName': 'gld_ld', 'sessionId': 'online_9166_a04e2b12931640cf817b3b0f4baf092c', 'userType': '1', 'userName': 'lid', 'userId': '2618028d2e5744cc9fd4f468a3b870f6'}, 'cookieValue': 'online_9166_a04e2b12931640cf817b3b0f4baf092c', 'jumpHref': '/detection', 'roleList': [{'cookieKey': '855dce8aa28eba069d65e45d0cca2064', 'roleName': '开标人', 'roleUrl': '/detection', 'roleNumber': '1'}]}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_searchProjectList_2: 查询当天项目列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
+    <div id='div_pt4_2' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_2'>通过</button>
+    <div id='div_pt4_2' class="collapse in" align="left">
+    <pre>
+    
+pt4_2: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'list': []}, 'time': '2023-06-15T09:52:46.051Z'}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_searchProjectList_3: 查询历史项目列表</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt4_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt4_3'>通过</button>
+    <div id='div_pt4_3' class="collapse in" align="left">
+    <pre>
+    
+pt4_3: 预期结果：{'code': 200, 'msg': '处理成功'}
+实际结果：{'code': 200, 'msg': '处理成功', 'errorMsg': None, 'data': {'projectList': [{'projectId': 'b68b799d27da58f6dea0afd7dc829c53', 'projectCode': '勿动-交通施工-场景4-09', 'projectName': '勿动-交通施工-场景4-09', 'region': '海南', 'industryName': '公路', 'bidSectionNumber': 1, 'openTimeOrder': '2023-04-25 19:13:13', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '826759c94d25e5e270113e37d854a904', 'projectId': 'b68b799d27da58f6dea0afd7dc829c53', 'projectCode': '勿动-交通施工-场景4-09', 'projectName': '勿动-交通施工-场景4-09', 'region': '海南', 'industryName': '公路', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '786e787637f7ad4aeef8085828e70a16', 'bidSectionCode': '勿动-交通施工-场景4-09', 'bidSectionName': 'test_121714公路施工-综合评分法-09', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'c734146ceba28cf0ba30e54a7692bfe6', 'openStateName': '第一信封开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-04-25 19:13:13', 'openTimeOrder': '2023-04-25 19:13:13', 'openRoom': '3', 'openFinishTime': '', 'tenderName': '测试1', 'tenderAgencyName': '测试2', 'evbidId': '2dcc49afd2b0891deb936d7e8bc85d58', 'tradingPlace': None, 'evalStateName': '第一信封开标中', 'evalState': 0, 'evalTime': '2023-04-25 19:13:15', 'evalTimeOrder': '2023-04-25 19:13:15', 'evalRoom': '3', 'remote': False, 'unionSection': False}]}, {'projectId': '2708531cd9425c097f02e8b17fc5236c', 'projectCode': 'X46000029010001250011-1', 'projectName': '海口市秀英区永兴镇第二中心幼儿园教学综合楼项目', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-24 15:47:54', 'isRemote': '远程开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'f23eaffd6d300a4209e1b7290ea6b1e1', 'projectId': '2708531cd9425c097f02e8b17fc5236c', 'projectCode': 'X46000029010001250011-1', 'projectName': '海口市秀英区永兴镇第二中心幼儿园教学综合楼项目', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '0662147a9e890ba2eb5ad332f7150a08', 'bidSectionCode': 'X4600002901000125001001-1', 'bidSectionName': '海口市秀英区永兴镇第二中心幼儿园教学综合楼项目', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '0a3c26627d0a12bf823220e8fd30b004', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-24 15:47:54', 'openTimeOrder': '2023-03-24 15:47:54', 'openRoom': '1', 'openFinishTime': '2023-03-24 17:22:41', 'tenderName': '海口市秀英区教育局', 'tenderAgencyName': '云南招标股份有限公司', 'evbidId': '4401746713d4383846293d4cf1f32a00', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-24 15:47:56', 'evalTimeOrder': '2023-03-24 15:47:56', 'evalRoom': '1', 'remote': True, 'unionSection': False}]}, {'projectId': '6ad1b7a14787f3162279c3f0ad6bbd4b', 'projectCode': 'X4600002901000128001-1', 'projectName': '琼海市教育新建校区车站路市政道路工程（二期）', 'region': '海南', 'industryName': '市政', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-23 18:11:37', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'c9d97df511f6975990b60d7c56b4e851', 'projectId': '6ad1b7a14787f3162279c3f0ad6bbd4b', 'projectCode': 'X4600002901000128001-1', 'projectName': '琼海市教育新建校区车站路市政道路工程（二期）', 'region': '海南', 'industryName': '市政', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '94349dc3d7728fb424fd6b0964e06dad', 'bidSectionCode': 'X4600002901000128001001-1', 'bidSectionName': '琼海市教育新建校区车站路市政道路工程（二期）', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '0fc2687c168401aacb5eebca89b6e952', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-23 18:11:37', 'openTimeOrder': '2023-03-23 18:11:37', 'openRoom': '1', 'openFinishTime': '2023-03-24 15:37:27', 'tenderName': '琼海市城市投资运营有限公司', 'tenderAgencyName': '海南海生项目管理有限公司', 'evbidId': 'e296753a1ce4e9827ca60ab251f67f15', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-23 18:11:39', 'evalTimeOrder': '2023-03-23 18:11:39', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': '11391611d6005b3b1ad24fac0d737502', 'projectCode': 'X4600002901000125001-1', 'projectName': '海口市秀英区永兴镇第二中心幼儿园教学综合楼项目', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-23 18:11:13', 'isRemote': '远程开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '24c11144b71f0ca77c1ad15196b28a23', 'projectId': '11391611d6005b3b1ad24fac0d737502', 'projectCode': 'X4600002901000125001-1', 'projectName': '海口市秀英区永兴镇第二中心幼儿园教学综合楼项目', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '66386c2a58f1d7e4d776aae8aa441da0', 'bidSectionCode': 'X4600002901000125001001-1', 'bidSectionName': '海口市秀英区永兴镇第二中心幼儿园教学综合楼项目', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '5f7f7eb69057eda1a5c5628b55289880', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-23 18:11:13', 'openTimeOrder': '2023-03-23 18:11:13', 'openRoom': '1', 'openFinishTime': '', 'tenderName': '海口市秀英区教育局', 'tenderAgencyName': '云南招标股份有限公司', 'evbidId': 'c00680eeaa47ab727a1a0c59231e306b', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-03-23 18:11:15', 'evalTimeOrder': '2023-03-23 18:11:15', 'evalRoom': '1', 'remote': True, 'unionSection': False}]}, {'projectId': '8593103e00b4d79f420f0c3a608c34c1', 'projectCode': 'X46000029010001220011-1', 'projectName': '三亚群众艺术馆南侧规划市政道路工程项目（施工）', 'region': '海南', 'industryName': '市政', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-23 12:43:09', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'ad029b357fdcb628b5a445c4fab75c21', 'projectId': '8593103e00b4d79f420f0c3a608c34c1', 'projectCode': 'X46000029010001220011-1', 'projectName': '三亚群众艺术馆南侧规划市政道路工程项目（施工）', 'region': '海南', 'industryName': '市政', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '4a28eee56b624a457680eefa079c6366', 'bidSectionCode': 'X4600002901000122001001-1', 'bidSectionName': '三亚群众艺术馆南侧规划市政道路工程项目（施工）', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '565275ade439e24aa521d090928ecdd2', 'openStateName': '评标结束', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-23 12:43:09', 'openTimeOrder': '2023-03-23 12:43:09', 'openRoom': '1', 'openFinishTime': '2023-03-23 15:43:48', 'tenderName': '三亚城市投资建设集团有限公司', 'tenderAgencyName': '海南卓能工程管理有限公司', 'evbidId': 'b3e075945faefbf2a2b98edab89c650b', 'tradingPlace': None, 'evalStateName': '评标结束', 'evalState': 2, 'evalTime': '2023-03-23 12:43:10', 'evalTimeOrder': '2023-03-23 12:43:10', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': '52ad50f50629a306b62d4ab092d2ff3b', 'projectCode': 'X4600002901000124001-1', 'projectName': '儋州市那大镇群英社区党群服务中心工程施工', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-21 15:16:37', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '26a70c8d090476227f6277c7a7cd1bbc', 'projectId': '52ad50f50629a306b62d4ab092d2ff3b', 'projectCode': 'X4600002901000124001-1', 'projectName': '儋州市那大镇群英社区党群服务中心工程施工', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '394dfd2f30d43e8b3e05db3829bfc512', 'bidSectionCode': 'X4600002901000124001001-1', 'bidSectionName': '儋州市那大镇群英社区党群服务中心工程施工', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '130b9fd7360d7e9c51d33d8df2055d42', 'openStateName': '评标结束', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-21 15:16:37', 'openTimeOrder': '2023-03-21 15:16:37', 'openRoom': '1', 'openFinishTime': '2023-03-21 15:48:01', 'tenderName': '儋州市那大镇人民政府', 'tenderAgencyName': '海南坤亿项目管理投资有限公司', 'evbidId': '8b3bdcf1c7ce8d737ec0c4c579934cd7', 'tradingPlace': None, 'evalStateName': '评标结束', 'evalState': 2, 'evalTime': '2023-03-21 15:16:38', 'evalTimeOrder': '2023-03-21 15:16:38', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': '440fd04b112da3f9ace8417824eb3cb9', 'projectCode': '水利投标报价验证1202', 'projectName': '水利投标报价验证1202', 'region': '海南', 'industryName': '水利', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-17 14:22:57', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '42828261874b628eda99e092cb7a0c1d', 'projectId': '440fd04b112da3f9ace8417824eb3cb9', 'projectCode': '水利投标报价验证1202', 'projectName': '水利投标报价验证1202', 'region': '海南', 'industryName': '水利', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '407787cbcf6f7e508f79112d51f10e8c', 'bidSectionCode': '水利投标报价验证1202', 'bidSectionName': '水利投标报价验证1202', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '690bc27076d4362b39545699dd07a623', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-17 14:22:57', 'openTimeOrder': '2023-03-17 14:22:57', 'openRoom': '1', 'openFinishTime': '2023-03-17 14:24:01', 'tenderName': '测服新区中建六局建筑建设有限公司', 'tenderAgencyName': '测服新区招标代理有限公司', 'evbidId': '5c6f37f233768e3faca80931c8dd2076', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-17 14:22:58', 'evalTimeOrder': '2023-03-17 14:22:58', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': 'f6c933f2a7dcd7f782a1340219bad515', 'projectCode': 'test房建施工综合评估法0221', 'projectName': 'test房建施工综合评估法0221', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-17 14:16:51', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'e7faef2265c5d8758fef82a4ceb7f32a', 'projectId': 'f6c933f2a7dcd7f782a1340219bad515', 'projectCode': 'test房建施工综合评估法0221', 'projectName': 'test房建施工综合评估法0221', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'ff3f76d01541e4580e28172167f41174', 'bidSectionCode': 'test房建施工综合评估法0221', 'bidSectionName': 'test房建施工综合评估法0221', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '1fe5ffc446a553d65327e8ff88becb18', 'openStateName': '评标中', 'openState': 2, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-17 14:16:51', 'openTimeOrder': '2023-03-17 14:16:51', 'openRoom': '1', 'openFinishTime': '2023-03-17 14:19:20', 'tenderName': 'aa', 'tenderAgencyName': None, 'evbidId': 'b1ab3d5fb7a0bf51f706b9ec020dd137', 'tradingPlace': None, 'evalStateName': '评标中', 'evalState': 1, 'evalTime': '2023-03-17 14:16:53', 'evalTimeOrder': '2023-03-17 14:16:53', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}, {'projectId': '372cf537d53e74ae5bf1e6aa1a003f44', 'projectCode': '123', 'projectName': '1018房建施工简易评估法测试项目', 'region': '海南', 'industryName': '房屋建筑', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-16 17:25:36', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': '31029d140418c6c4ae69562e66fb76df', 'projectId': '372cf537d53e74ae5bf1e6aa1a003f44', 'projectCode': '123', 'projectName': '1018房建施工简易评估法测试项目', 'region': '海南', 'industryName': '房屋建筑', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': 'e6aa0b7cfea01bc90bb1abad0b1a45d7', 'bidSectionCode': '1018房建施工简易评估法测试项目', 'bidSectionName': '1018房建施工简易评估法测试项目', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': 'b5be9813be6d32fa147570d47440096d', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-16 17:25:36', 'openTimeOrder': '2023-03-16 17:25:36', 'openRoom': '1', 'openFinishTime': '', 'tenderName': '史蒂芬森', 'tenderAgencyName': '加工费积分积分换', 'evbidId': '622170e15c798627ca4d57d5dad54610', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-03-16 17:25:38', 'evalTimeOrder': '2023-03-16 17:25:38', 'evalRoom': '1', 'remote': False, 'unionSection': True}]}, {'projectId': 'c02c21e36e69afa4ec7eeb9bb6cfc0b8', 'projectCode': 'X4600002901000122001-2', 'projectName': '三亚群众艺术馆南侧规划市政道路工程项目（施工）', 'region': '海南', 'industryName': '市政', 'bidSectionNumber': 1, 'openTimeOrder': '2023-03-15 15:31:09', 'isRemote': '现场开标', 'fileStructureVersion': None, 'tradingPlace': None, 'sectionList': [{'domainId': 'ce6054a61e9d03f171f4d691fcd85af7', 'projectId': 'c02c21e36e69afa4ec7eeb9bb6cfc0b8', 'projectCode': 'X4600002901000122001-2', 'projectName': '三亚群众艺术馆南侧规划市政道路工程项目（施工）', 'region': '海南', 'industryName': '市政', 'professionTypeName': '工程施工', 'tenderTypeID': None, 'tenderTypeCode': None, 'tenderTypeName': None, 'groupId': None, 'groupCode': None, 'groupName': None, 'bidSectionId': '00809defc79dd888072346acf8672329', 'bidSectionCode': 'X4600002901000122001001-2', 'bidSectionName': '三亚群众艺术馆南侧规划市政道路工程项目（施工）', 'tenderMethod': 1, 'tenderMethodName': '公开招标', 'openbidId': '9ca3c1f4b8eb93435712a0c61e52dec4', 'openStateName': '开标中', 'openState': 1, 'isFailBid': 0, 'isPause': 0, 'openTime': '2023-03-15 15:31:09', 'openTimeOrder': '2023-03-15 15:31:09', 'openRoom': '1', 'openFinishTime': '', 'tenderName': '三亚城市投资建设集团有限公司', 'tenderAgencyName': '海南卓能工程管理有限公司', 'evbidId': '64d487e3b1a118b58e3211613b7dfb5b', 'tradingPlace': None, 'evalStateName': '开标中', 'evalState': 0, 'evalTime': '2023-03-15 15:31:12', 'evalTimeOrder': '2023-03-15 15:31:12', 'evalRoom': '1', 'remote': False, 'unionSection': False}]}], 'pageTotal': 27, 'pageIndex': 1}, 'time': '2023-06-15T09:52:46.193Z'}
 
 
     </pre>
@@ -271,11 +1343,11 @@ ModuleNotFoundError: No module named 'lib.ddt'
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>4</td>
+    <td>39</td>
+    <td>12</td>
     <td>0</td>
-    <td>0</td>
-    <td>4</td>
-    <td>通过率：0.00%</td>
+    <td>27</td>
+    <td>通过率：30.77%</td>
 </tr>
 </table>
 
