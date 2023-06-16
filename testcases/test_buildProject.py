@@ -74,7 +74,8 @@ class TestBuildProject(unittest.TestCase):
         if case["interface"] == "createProjectByTenderFile":
             projectId = jsonpath.jsonpath(result, "$..projectId")[0]
             setattr(TestData, "projectId", projectId)
-            sql = case["check_sql"].format(getattr(TestData, "projectId"))
+            sql=replace_data(case["check_sql"])
+            print(sql)
             self.db.delete(sql)
 
         try:

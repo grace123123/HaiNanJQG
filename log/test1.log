@@ -11723,3 +11723,183 @@ teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
 2023-06-16 21:55:08,624 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
 2023-06-16 21:55:08,814 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
 2023-06-16 21:55:08,913 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 22:00:44,953 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 22:00:45,648 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 22:00:45,780 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:01:16,953 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 22:01:17,318 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 22:01:17,510 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 22:01:17,642 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 22:01:17,829 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 22:01:18,179 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 22:01:18,332 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 22:01:18,544 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 22:01:18,864 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 22:01:19,127 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 22:01:19,359 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 22:01:19,623 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 22:01:19,974 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 22:01:20,204 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 22:01:20,505 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 22:01:20,726 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 22:01:20,875 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 22:01:21,039 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 22:01:21,201 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 22:01:21,312 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 22:09:45,641 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 22:09:45,840 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:09:54,586 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 22:09:54,700 - [test_login.py-->line:37] - INFO: 用例：账号为空执行未通过
+2023-06-16 22:09:54,700 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 22:09:54,700 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 22:09:55,017 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 22:09:55,131 - [test_login.py-->line:37] - INFO: 用例：账号错误执行未通过
+2023-06-16 22:09:55,131 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 22:09:55,131 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 22:09:55,344 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 22:09:55,552 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 22:09:56,296 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 22:09:56,391 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:10:06,929 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 22:10:07,056 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 22:10:27,293 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 22:10:27,440 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:10:56,680 - [test_buildProject.py-->line:91] - INFO: 用例：新建项目执行通过
+2023-06-16 22:10:56,875 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 22:10:56,983 - [test_login.py-->line:37] - INFO: 用例：账号为空执行未通过
+2023-06-16 22:10:56,983 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 22:10:56,984 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 22:10:57,293 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 22:10:57,399 - [test_login.py-->line:37] - INFO: 用例：账号错误执行未通过
+2023-06-16 22:10:57,399 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 22:10:57,399 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 22:10:57,628 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 22:10:57,776 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 22:10:58,514 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 22:10:58,615 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:11:03,356 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 22:11:03,559 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 22:11:03,676 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 22:14:12,666 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 22:14:12,813 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:14:33,117 - [test_buildProject.py-->line:91] - INFO: 用例：新建项目执行通过
+2023-06-16 22:16:30,618 - [test_buildProject.py-->line:92] - INFO: 用例：登录成功执行通过
+2023-06-16 22:16:30,752 - [test_buildProject.py-->line:92] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:16:58,261 - [test_buildProject.py-->line:92] - INFO: 用例：新建项目执行通过
+2023-06-16 22:19:04,103 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:19:04,228 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:23:04,036 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:23:04,163 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:24:36,979 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:24:37,119 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:26:56,846 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:26:56,983 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:36:14,378 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:36:14,519 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:36:39,260 - [test_buildProject.py-->line:93] - INFO: 用例：新建项目执行通过
+2023-06-16 22:37:04,844 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:37:04,970 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:37:25,271 - [test_buildProject.py-->line:93] - INFO: 用例：新建项目执行通过
+2023-06-16 22:37:39,474 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:37:39,589 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:37:59,717 - [test_buildProject.py-->line:93] - INFO: 用例：新建项目执行通过
+2023-06-16 22:38:31,317 - [test_buildProject.py-->line:93] - INFO: 用例：登录成功执行通过
+2023-06-16 22:38:31,445 - [test_buildProject.py-->line:93] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:38:50,945 - [test_buildProject.py-->line:93] - INFO: 用例：新建项目执行通过
+2023-06-16 22:39:50,647 - [test_buildProject.py-->line:92] - INFO: 用例：登录成功执行通过
+2023-06-16 22:39:50,767 - [test_buildProject.py-->line:92] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:40:10,627 - [test_buildProject.py-->line:92] - INFO: 用例：新建项目执行通过
+2023-06-16 22:40:37,915 - [test_buildProject.py-->line:92] - INFO: 用例：登录成功执行通过
+2023-06-16 22:40:38,037 - [test_buildProject.py-->line:92] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:40:57,948 - [test_buildProject.py-->line:92] - INFO: 用例：新建项目执行通过
+2023-06-16 22:40:58,179 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 22:40:58,499 - [test_login.py-->line:43] - INFO: 用例：账号为空执行通过
+2023-06-16 22:40:58,810 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 22:40:58,963 - [test_login.py-->line:43] - INFO: 用例：账号错误执行通过
+2023-06-16 22:40:59,178 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 22:40:59,365 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 22:41:00,078 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 22:41:00,175 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:41:19,876 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 22:41:20,148 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 22:41:20,304 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 22:41:20,435 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 22:41:20,546 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 22:41:20,844 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 22:41:20,963 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 22:41:21,098 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 22:41:21,299 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 22:41:21,472 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 22:41:21,641 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 22:41:21,817 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 22:41:22,074 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 22:41:22,216 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 22:41:22,442 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 22:41:22,610 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 22:41:22,780 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 22:41:23,003 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 22:41:23,193 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 22:41:23,332 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 22:45:30,214 - [test_buildProject.py-->line:92] - INFO: 用例：登录成功执行通过
+2023-06-16 22:45:30,375 - [test_buildProject.py-->line:92] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:45:51,387 - [test_buildProject.py-->line:92] - INFO: 用例：新建项目执行通过
+2023-06-16 22:45:51,620 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 22:45:51,927 - [test_login.py-->line:43] - INFO: 用例：账号为空执行通过
+2023-06-16 22:45:52,143 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 22:45:52,387 - [test_login.py-->line:43] - INFO: 用例：账号错误执行通过
+2023-06-16 22:45:52,825 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 22:45:52,986 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 22:45:53,715 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 22:45:53,863 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 22:46:15,046 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 22:46:15,304 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 22:46:15,473 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 22:46:15,575 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 22:46:15,705 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 22:46:15,928 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 22:46:16,052 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 22:46:16,205 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 22:46:16,395 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 22:46:16,577 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 22:46:16,779 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 22:46:16,974 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 22:46:17,265 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 22:46:17,383 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 22:46:17,580 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 22:46:17,785 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 22:46:17,939 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 22:46:18,095 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 22:46:18,268 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 22:46:18,387 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
