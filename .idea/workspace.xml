@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="553ac103-6036-4f47-836c-01ce79c8e14d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cases.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/cases.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/test1.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/test1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_buildProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_buildProject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_searchProjectList.py" beforeDir="false" />
-    </list>
+    <list default="true" id="553ac103-6036-4f47-836c-01ce79c8e14d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,11 +266,11 @@
     </configuration>
     <list>
       <item itemvalue="Python.runtest" />
-      <item itemvalue="Python tests.Unittests in test_buildProject.py" />
-      <item itemvalue="Python tests.Unittests in test_openBidSchedule.py" />
-      <item itemvalue="Python tests.Unittests for test_openBidSchedule.TestOpenBidSchedule.test_openBidSchedule" />
       <item itemvalue="Python tests.Unittests for test_buildProject.TestBuildProject" />
       <item itemvalue="Python tests.Unittests for test_buildProject.TestBuildProject.test_buildProject" />
+      <item itemvalue="Python tests.Unittests for test_openBidSchedule.TestOpenBidSchedule.test_openBidSchedule" />
+      <item itemvalue="Python tests.Unittests in test_buildProject.py" />
+      <item itemvalue="Python tests.Unittests in test_openBidSchedule.py" />
     </list>
     <recent_temporary>
       <list>
@@ -370,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686923758489</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改">
+      <created>1686927408414</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686927408414</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -416,13 +416,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.2104845" />
       <window_info id="Structure" order="1" sideWeight="0.50212765" side_tool="true" weight="0.17394757" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3321492" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37300178" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37300178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6625222" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
