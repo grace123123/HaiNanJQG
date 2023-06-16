@@ -10597,3 +10597,1129 @@ AssertionError: '3001' != 1007
 2023-06-15 17:52:45,299 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
 2023-06-15 17:52:45,418 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
 2023-06-15 17:52:45,607 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-15 19:40:56,321 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-15 19:40:56,446 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-15 19:40:56,663 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-15 19:40:56,757 - [test_login.py-->line:37] - INFO: 用例：账号为空执行未通过
+2023-06-15 19:40:56,757 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-15 19:40:56,757 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-15 19:40:57,050 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-15 19:40:57,153 - [test_login.py-->line:37] - INFO: 用例：账号错误执行未通过
+2023-06-15 19:40:57,153 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-15 19:40:57,153 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-15 19:40:57,357 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-15 19:40:57,540 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-15 19:40:57,764 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-15 19:40:57,965 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-15 19:40:58,068 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-15 19:40:58,215 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 14:33:47,616 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 14:33:47,859 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-16 14:33:48,139 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 14:33:49,287 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 14:33:56,222 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 14:33:56,419 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 14:33:56,703 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 14:33:56,946 - [test_login.py-->line:43] - INFO: 用例：账号为空执行通过
+2023-06-16 14:33:57,208 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 14:33:57,528 - [test_login.py-->line:43] - INFO: 用例：账号错误执行通过
+2023-06-16 14:33:57,777 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 14:33:58,060 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 14:34:08,087 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 14:34:08,343 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-16 14:34:08,568 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 14:34:09,363 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 14:38:16,445 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 14:38:16,642 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 14:38:16,917 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 14:38:17,260 - [test_login.py-->line:37] - INFO: 用例：账号为空执行未通过
+2023-06-16 14:38:17,260 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 14:38:17,260 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 14:38:17,591 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 14:38:17,790 - [test_login.py-->line:37] - INFO: 用例：账号错误执行未通过
+2023-06-16 14:38:17,790 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 14:38:17,790 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 14:38:18,034 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 14:38:18,268 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 14:38:28,193 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 14:38:28,445 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-16 14:38:28,658 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 14:38:29,467 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 15:24:41,875 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 15:24:42,102 - [test_login.py-->line:37] - INFO: 用例：账号为空执行未通过
+2023-06-16 15:24:42,102 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 15:24:42,103 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 15:24:42,460 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 15:24:42,604 - [test_login.py-->line:37] - INFO: 用例：账号错误执行未通过
+2023-06-16 15:24:42,604 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 15:24:42,604 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 15:24:42,855 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 15:24:43,070 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 15:24:43,275 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 15:24:52,087 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 15:24:52,362 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-16 15:24:52,589 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 15:24:53,401 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 15:27:05,652 - [test_login.py-->line:43] - INFO: 用例：登录成功执行通过
+2023-06-16 15:27:05,859 - [test_login.py-->line:37] - INFO: 用例：账号为空执行未通过
+2023-06-16 15:27:05,859 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 15:27:05,859 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 15:27:06,187 - [test_login.py-->line:43] - INFO: 用例：密码为空执行通过
+2023-06-16 15:27:06,303 - [test_login.py-->line:37] - INFO: 用例：账号错误执行未通过
+2023-06-16 15:27:06,304 - [test_login.py-->line:38] - ERROR: '3001' != 1007
+2023-06-16 15:27:06,304 - [test_login.py-->line:39] - ERROR: '3001' != 1007
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_login.py", line 33, in test_login
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '3001' != 1007
+2023-06-16 15:27:06,550 - [test_login.py-->line:43] - INFO: 用例：密码错误执行通过
+2023-06-16 15:27:06,851 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 15:27:07,050 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 15:27:19,307 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 15:27:19,518 - [test_searchProjectList.py-->line:53] - INFO: 用例：登录成功执行通过
+2023-06-16 15:27:19,673 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 15:27:20,398 - [test_searchProjectList.py-->line:53] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 15:29:38,617 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 15:29:38,806 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 15:30:08,392 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 15:41:32,157 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 15:41:32,436 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 15:41:39,517 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 15:42:52,179 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 15:42:53,058 - [test_openBidSchedule.py-->line:99] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 15:42:53,216 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 15:43:00,642 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 16:02:54,348 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 16:02:58,655 - [test_openBidSchedule.py-->line:99] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 16:03:44,895 - [test_openBidSchedule.py-->line:99] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 16:03:45,088 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:04:13,139 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 16:23:34,950 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 16:23:35,142 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:25:10,489 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 16:25:10,626 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:26:09,903 - [test_buildProject.py-->line:91] - INFO: 用例：登录成功执行通过
+2023-06-16 16:26:10,070 - [test_buildProject.py-->line:91] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:29:24,452 - [test_buildProject.py-->line:95] - INFO: 用例：登录成功执行通过
+2023-06-16 16:29:24,639 - [test_buildProject.py-->line:95] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:29:37,117 - [test_buildProject.py-->line:89] - INFO: 用例：新建项目执行未通过
+2023-06-16 16:29:37,117 - [test_buildProject.py-->line:90] - ERROR:  :: 2001 != 200
+2023-06-16 16:29:37,117 - [test_buildProject.py-->line:91] - ERROR:  :: 2001 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '2001' != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 85, in test_buildProject
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 2001 != 200
+2023-06-16 16:30:10,465 - [test_buildProject.py-->line:101] - INFO: 用例：登录成功执行通过
+2023-06-16 16:30:10,612 - [test_buildProject.py-->line:101] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:30:22,233 - [test_buildProject.py-->line:95] - INFO: 用例：新建项目执行未通过
+2023-06-16 16:30:22,233 - [test_buildProject.py-->line:96] - ERROR:  :: 2001 != 200
+2023-06-16 16:30:22,233 - [test_buildProject.py-->line:97] - ERROR:  :: 2001 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '2001' != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 91, in test_buildProject
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 2001 != 200
+2023-06-16 16:33:03,129 - [test_buildProject.py-->line:101] - INFO: 用例：登录成功执行通过
+2023-06-16 16:33:03,325 - [test_buildProject.py-->line:101] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:33:14,737 - [test_buildProject.py-->line:95] - INFO: 用例：新建项目执行未通过
+2023-06-16 16:33:14,737 - [test_buildProject.py-->line:96] - ERROR:  :: 2001 != 200
+2023-06-16 16:33:14,737 - [test_buildProject.py-->line:97] - ERROR:  :: 2001 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '2001' != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_buildProject.py", line 91, in test_buildProject
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 2001 != 200
+2023-06-16 16:37:30,812 - [test_buildProject.py-->line:97] - INFO: 用例：登录成功执行通过
+2023-06-16 16:37:31,284 - [test_buildProject.py-->line:97] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:43:50,910 - [test_openBidSchedule.py-->line:99] - INFO: 用例：登录成功执行通过
+2023-06-16 16:43:51,132 - [test_openBidSchedule.py-->line:99] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 16:43:51,941 - [test_openBidSchedule.py-->line:99] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 16:43:52,175 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 16:44:16,326 - [test_openBidSchedule.py-->line:99] - INFO: 用例：新建项目执行通过
+2023-06-16 16:44:16,533 - [test_openBidSchedule.py-->line:99] - INFO: 用例：获取跳转路径执行通过
+2023-06-16 16:44:16,884 - [test_openBidSchedule.py-->line:99] - INFO: 用例：进入项目执行通过
+2023-06-16 16:44:17,153 - [test_openBidSchedule.py-->line:99] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:30:16,563 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:30:16,731 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:30:17,549 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:30:17,753 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:30:23,734 - [test_openBidSchedule.py-->line:109] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:30:34,997 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:30:35,257 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:30:36,014 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:30:36,196 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:30:58,916 - [test_openBidSchedule.py-->line:109] - INFO: 用例：新建项目执行通过
+2023-06-16 17:30:59,279 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 17:30:59,464 - [test_openBidSchedule.py-->line:109] - INFO: 用例：进入项目执行通过
+2023-06-16 17:30:59,776 - [test_openBidSchedule.py-->line:109] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:34:13,305 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:34:13,884 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:34:15,428 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:34:15,976 - [test_openBidSchedule.py-->line:103] - INFO: 用例：获取文件上传路径执行不通过
+2023-06-16 17:34:15,976 - [test_openBidSchedule.py-->line:104] - ERROR:  :: 501 != 200
+2023-06-16 17:34:15,977 - [test_openBidSchedule.py-->line:105] - ERROR:  :: 501 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 501 != '200'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 99, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 501 != 200
+2023-06-16 17:34:16,492 - [test_openBidSchedule.py-->line:103] - INFO: 用例：打开文件上传弹框执行不通过
+2023-06-16 17:34:16,492 - [test_openBidSchedule.py-->line:104] - ERROR:  :: 501 != 200
+2023-06-16 17:34:16,492 - [test_openBidSchedule.py-->line:105] - ERROR:  :: 501 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 501 != '200'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 99, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 501 != 200
+2023-06-16 17:35:27,184 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:35:27,383 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:35:28,201 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:35:28,363 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:35:59,676 - [test_openBidSchedule.py-->line:109] - INFO: 用例：新建项目执行通过
+2023-06-16 17:35:59,852 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 17:35:59,995 - [test_openBidSchedule.py-->line:109] - INFO: 用例：进入项目执行通过
+2023-06-16 17:36:00,231 - [test_openBidSchedule.py-->line:109] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:41:39,502 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:41:43,442 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:41:46,407 - [test_openBidSchedule.py-->line:109] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:41:48,321 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:50:20,046 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:50:21,014 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:50:25,661 - [test_openBidSchedule.py-->line:109] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:50:42,428 - [test_openBidSchedule.py-->line:109] - INFO: 用例：登录成功执行通过
+2023-06-16 17:50:43,463 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:51:05,696 - [test_openBidSchedule.py-->line:109] - INFO: 用例：新建项目执行通过
+2023-06-16 17:51:05,858 - [test_openBidSchedule.py-->line:109] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 17:51:05,995 - [test_openBidSchedule.py-->line:109] - INFO: 用例：进入项目执行通过
+2023-06-16 17:51:06,233 - [test_openBidSchedule.py-->line:109] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:53:08,603 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 17:53:08,739 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:53:09,470 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:53:09,612 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:53:15,216 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 17:53:36,999 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 17:53:37,184 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 17:53:37,918 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 17:53:38,101 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 17:54:01,499 - [test_openBidSchedule.py-->line:111] - INFO: 用例：新建项目执行通过
+2023-06-16 17:54:01,643 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 17:54:01,768 - [test_openBidSchedule.py-->line:111] - INFO: 用例：进入项目执行通过
+2023-06-16 17:54:02,011 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 18:02:24,916 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 18:02:25,760 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 18:02:25,895 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 18:02:48,991 - [test_openBidSchedule.py-->line:111] - INFO: 用例：新建项目执行通过
+2023-06-16 18:02:49,117 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 18:02:49,243 - [test_openBidSchedule.py-->line:111] - INFO: 用例：进入项目执行通过
+2023-06-16 18:02:49,553 - [test_openBidSchedule.py-->line:111] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 18:02:49,729 - [test_openBidSchedule.py-->line:111] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 18:02:49,831 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 18:05:54,128 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 18:05:54,936 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 18:05:55,055 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 18:05:57,506 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 18:05:58,315 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 18:05:58,418 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 18:06:03,863 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 18:59:48,882 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 18:59:49,688 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 18:59:49,833 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:00:25,897 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 19:00:26,825 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:00:26,956 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:00:56,352 - [test_openBidSchedule.py-->line:111] - INFO: 用例：新建项目执行通过
+2023-06-16 19:00:56,537 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:00:56,647 - [test_openBidSchedule.py-->line:111] - INFO: 用例：进入项目执行通过
+2023-06-16 19:00:56,856 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:02:44,725 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 19:02:45,525 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:02:45,631 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:02:51,796 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:03:24,755 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 19:03:24,949 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 19:03:25,634 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:03:25,768 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:03:49,679 - [test_openBidSchedule.py-->line:111] - INFO: 用例：新建项目执行通过
+2023-06-16 19:03:49,836 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:03:49,949 - [test_openBidSchedule.py-->line:111] - INFO: 用例：进入项目执行通过
+2023-06-16 19:03:50,201 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:15:54,198 - [test_openBidSchedule.py-->line:113] - INFO: 用例：登录成功执行通过
+2023-06-16 19:15:55,036 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:15:55,158 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:16:00,942 - [test_openBidSchedule.py-->line:113] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:16:08,482 - [test_openBidSchedule.py-->line:113] - INFO: 用例：登录成功执行通过
+2023-06-16 19:16:09,288 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:16:09,418 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:16:32,682 - [test_openBidSchedule.py-->line:113] - INFO: 用例：新建项目执行通过
+2023-06-16 19:16:32,873 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:16:33,012 - [test_openBidSchedule.py-->line:113] - INFO: 用例：进入项目执行通过
+2023-06-16 19:16:33,231 - [test_openBidSchedule.py-->line:113] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:20:58,602 - [test_openBidSchedule.py-->line:113] - INFO: 用例：登录成功执行通过
+2023-06-16 19:20:59,428 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:20:59,566 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:21:04,830 - [test_openBidSchedule.py-->line:113] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:24:58,679 - [test_openBidSchedule.py-->line:113] - INFO: 用例：登录成功执行通过
+2023-06-16 19:24:58,909 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 19:24:59,670 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:24:59,844 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:25:24,281 - [test_openBidSchedule.py-->line:113] - INFO: 用例：新建项目执行通过
+2023-06-16 19:25:24,480 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:25:24,577 - [test_openBidSchedule.py-->line:113] - INFO: 用例：进入项目执行通过
+2023-06-16 19:25:24,878 - [test_openBidSchedule.py-->line:107] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 19:25:24,878 - [test_openBidSchedule.py-->line:108] - ERROR:  :: 500 != 200
+2023-06-16 19:25:24,878 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 103, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:25:25,100 - [test_openBidSchedule.py-->line:113] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 19:25:25,236 - [test_openBidSchedule.py-->line:113] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:26:07,955 - [test_openBidSchedule.py-->line:113] - INFO: 用例：登录成功执行通过
+2023-06-16 19:26:08,252 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 19:26:09,003 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:26:09,139 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:26:32,178 - [test_openBidSchedule.py-->line:113] - INFO: 用例：新建项目执行通过
+2023-06-16 19:26:32,338 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:26:32,446 - [test_openBidSchedule.py-->line:113] - INFO: 用例：进入项目执行通过
+2023-06-16 19:26:32,552 - [test_openBidSchedule.py-->line:107] - INFO: 用例：打开【新增投标单位】弹框执行不通过
+2023-06-16 19:26:32,552 - [test_openBidSchedule.py-->line:108] - ERROR:  :: 500 != 200
+2023-06-16 19:26:32,553 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 103, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:26:32,764 - [test_openBidSchedule.py-->line:107] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 19:26:32,764 - [test_openBidSchedule.py-->line:108] - ERROR:  :: 500 != 200
+2023-06-16 19:26:32,764 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 103, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:26:32,934 - [test_openBidSchedule.py-->line:113] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 19:26:33,104 - [test_openBidSchedule.py-->line:113] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:31:57,081 - [test_openBidSchedule.py-->line:113] - INFO: 用例：登录成功执行通过
+2023-06-16 19:31:57,333 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 19:31:58,012 - [test_openBidSchedule.py-->line:113] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:31:58,139 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:32:24,163 - [test_openBidSchedule.py-->line:113] - INFO: 用例：新建项目执行通过
+2023-06-16 19:32:24,398 - [test_openBidSchedule.py-->line:113] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:32:24,575 - [test_openBidSchedule.py-->line:113] - INFO: 用例：进入项目执行通过
+2023-06-16 19:32:24,796 - [test_openBidSchedule.py-->line:107] - INFO: 用例：打开【新增投标单位】弹框执行不通过
+2023-06-16 19:32:24,796 - [test_openBidSchedule.py-->line:108] - ERROR:  :: 500 != 200
+2023-06-16 19:32:24,796 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 103, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:32:25,089 - [test_openBidSchedule.py-->line:107] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 19:32:25,090 - [test_openBidSchedule.py-->line:108] - ERROR:  :: 500 != 200
+2023-06-16 19:32:25,090 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 103, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:32:25,298 - [test_openBidSchedule.py-->line:113] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 19:32:25,517 - [test_openBidSchedule.py-->line:113] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 19:55:07,257 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 19:55:07,527 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 19:55:08,458 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:55:08,554 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:55:31,924 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 19:55:32,159 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 19:55:32,895 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 19:55:33,095 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 19:55:57,153 - [test_openBidSchedule.py-->line:111] - INFO: 用例：新建项目执行通过
+2023-06-16 19:55:57,354 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 19:55:57,452 - [test_openBidSchedule.py-->line:111] - INFO: 用例：进入项目执行通过
+2023-06-16 19:55:57,565 - [test_openBidSchedule.py-->line:105] - INFO: 用例：打开【新增投标单位】弹框执行不通过
+2023-06-16 19:55:57,565 - [test_openBidSchedule.py-->line:106] - ERROR:  :: 500 != 200
+2023-06-16 19:55:57,565 - [test_openBidSchedule.py-->line:107] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 101, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:55:57,783 - [test_openBidSchedule.py-->line:105] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 19:55:57,784 - [test_openBidSchedule.py-->line:106] - ERROR:  :: 500 != 200
+2023-06-16 19:55:57,784 - [test_openBidSchedule.py-->line:107] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 101, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 19:55:57,919 - [test_openBidSchedule.py-->line:111] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 19:55:58,030 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:00:09,030 - [test_openBidSchedule.py-->line:111] - INFO: 用例：登录成功执行通过
+2023-06-16 20:00:09,276 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:00:09,973 - [test_openBidSchedule.py-->line:111] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:00:10,091 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:00:32,961 - [test_openBidSchedule.py-->line:111] - INFO: 用例：新建项目执行通过
+2023-06-16 20:00:33,148 - [test_openBidSchedule.py-->line:111] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:00:33,252 - [test_openBidSchedule.py-->line:111] - INFO: 用例：进入项目执行通过
+2023-06-16 20:00:33,364 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:00:33,599 - [test_openBidSchedule.py-->line:105] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:00:33,599 - [test_openBidSchedule.py-->line:106] - ERROR:  :: 500 != 200
+2023-06-16 20:00:33,599 - [test_openBidSchedule.py-->line:107] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 101, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:00:33,756 - [test_openBidSchedule.py-->line:111] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:00:33,857 - [test_openBidSchedule.py-->line:111] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:09:46,263 - [test_openBidSchedule.py-->line:114] - INFO: 用例：登录成功执行通过
+2023-06-16 20:09:46,514 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:09:47,224 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:09:47,372 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:10:09,127 - [test_openBidSchedule.py-->line:114] - INFO: 用例：新建项目执行通过
+2023-06-16 20:10:09,322 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:10:09,427 - [test_openBidSchedule.py-->line:114] - INFO: 用例：进入项目执行通过
+2023-06-16 20:10:09,546 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:10:09,767 - [test_openBidSchedule.py-->line:108] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:10:09,767 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+2023-06-16 20:10:09,767 - [test_openBidSchedule.py-->line:110] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 104, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:10:09,936 - [test_openBidSchedule.py-->line:114] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:10:10,067 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:12:46,136 - [test_openBidSchedule.py-->line:114] - INFO: 用例：登录成功执行通过
+2023-06-16 20:12:46,374 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:12:47,104 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:12:47,266 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:13:09,278 - [test_openBidSchedule.py-->line:114] - INFO: 用例：新建项目执行通过
+2023-06-16 20:13:09,450 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:13:09,601 - [test_openBidSchedule.py-->line:114] - INFO: 用例：进入项目执行通过
+2023-06-16 20:13:09,713 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:13:10,141 - [test_openBidSchedule.py-->line:114] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:13:10,270 - [test_openBidSchedule.py-->line:114] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:13:10,473 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:13:10,669 - [test_openBidSchedule.py-->line:114] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:13:10,885 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:13:11,115 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:13:11,316 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:13:11,593 - [test_openBidSchedule.py-->line:114] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:13:11,729 - [test_openBidSchedule.py-->line:114] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:13:11,974 - [test_openBidSchedule.py-->line:114] - INFO: 用例：全部确认执行通过
+2023-06-16 20:13:12,163 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:13:12,311 - [test_openBidSchedule.py-->line:108] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:13:12,311 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+2023-06-16 20:13:12,312 - [test_openBidSchedule.py-->line:110] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 104, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:13:12,456 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:13:12,614 - [test_openBidSchedule.py-->line:114] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:13:12,757 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:20:07,823 - [test_openBidSchedule.py-->line:114] - INFO: 用例：登录成功执行通过
+2023-06-16 20:20:08,066 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:20:08,801 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:20:08,905 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:20:37,467 - [test_openBidSchedule.py-->line:114] - INFO: 用例：新建项目执行通过
+2023-06-16 20:20:37,656 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:20:37,768 - [test_openBidSchedule.py-->line:114] - INFO: 用例：进入项目执行通过
+2023-06-16 20:20:37,888 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:20:38,342 - [test_openBidSchedule.py-->line:114] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:20:38,470 - [test_openBidSchedule.py-->line:114] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:20:38,599 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:20:38,824 - [test_openBidSchedule.py-->line:114] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:20:39,013 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:20:39,183 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:20:39,362 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:20:39,690 - [test_openBidSchedule.py-->line:114] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:20:39,812 - [test_openBidSchedule.py-->line:114] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:20:40,056 - [test_openBidSchedule.py-->line:114] - INFO: 用例：全部确认执行通过
+2023-06-16 20:20:40,247 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:20:40,388 - [test_openBidSchedule.py-->line:108] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:20:40,388 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+2023-06-16 20:20:40,388 - [test_openBidSchedule.py-->line:110] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 104, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:20:40,555 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:20:40,697 - [test_openBidSchedule.py-->line:114] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:20:40,820 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:33:59,254 - [test_openBidSchedule.py-->line:114] - INFO: 用例：登录成功执行通过
+2023-06-16 20:33:59,501 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:34:00,204 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:34:00,343 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:34:22,570 - [test_openBidSchedule.py-->line:114] - INFO: 用例：新建项目执行通过
+2023-06-16 20:34:22,775 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:34:22,880 - [test_openBidSchedule.py-->line:114] - INFO: 用例：进入项目执行通过
+2023-06-16 20:34:22,983 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:34:23,366 - [test_openBidSchedule.py-->line:114] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:34:23,470 - [test_openBidSchedule.py-->line:114] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:34:23,653 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:34:23,867 - [test_openBidSchedule.py-->line:114] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:34:24,087 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:34:24,298 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:34:24,465 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:34:24,737 - [test_openBidSchedule.py-->line:114] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:34:24,873 - [test_openBidSchedule.py-->line:114] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:34:25,097 - [test_openBidSchedule.py-->line:114] - INFO: 用例：全部确认执行通过
+2023-06-16 20:34:25,302 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:34:25,436 - [test_openBidSchedule.py-->line:108] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:34:25,436 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+2023-06-16 20:34:25,436 - [test_openBidSchedule.py-->line:110] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 104, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:34:25,644 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:34:25,817 - [test_openBidSchedule.py-->line:114] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:34:25,961 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:35:41,077 - [test_openBidSchedule.py-->line:114] - INFO: 用例：登录成功执行通过
+2023-06-16 20:35:41,313 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:35:42,018 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:35:42,165 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:36:05,460 - [test_openBidSchedule.py-->line:114] - INFO: 用例：新建项目执行通过
+2023-06-16 20:36:05,623 - [test_openBidSchedule.py-->line:114] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:36:05,775 - [test_openBidSchedule.py-->line:114] - INFO: 用例：进入项目执行通过
+2023-06-16 20:36:05,876 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:36:06,106 - [test_openBidSchedule.py-->line:114] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:36:06,238 - [test_openBidSchedule.py-->line:114] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:36:06,391 - [test_openBidSchedule.py-->line:114] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:36:06,613 - [test_openBidSchedule.py-->line:114] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:36:06,809 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:36:06,984 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:36:07,183 - [test_openBidSchedule.py-->line:114] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:36:07,467 - [test_openBidSchedule.py-->line:114] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:36:07,624 - [test_openBidSchedule.py-->line:114] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:36:07,838 - [test_openBidSchedule.py-->line:114] - INFO: 用例：全部确认执行通过
+2023-06-16 20:36:07,997 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:36:08,161 - [test_openBidSchedule.py-->line:108] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:36:08,161 - [test_openBidSchedule.py-->line:109] - ERROR:  :: 500 != 200
+2023-06-16 20:36:08,161 - [test_openBidSchedule.py-->line:110] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 104, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:36:08,303 - [test_openBidSchedule.py-->line:114] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:36:08,441 - [test_openBidSchedule.py-->line:114] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:36:08,553 - [test_openBidSchedule.py-->line:114] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:41:12,331 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 20:41:12,596 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:41:13,301 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:41:13,442 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:41:36,771 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 20:41:36,930 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:41:37,028 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 20:41:37,143 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:41:37,501 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:41:37,607 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:41:37,793 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:41:38,008 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:41:38,240 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:41:38,424 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:41:38,616 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:41:38,886 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:41:39,062 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:41:39,323 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 20:41:39,484 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:41:39,621 - [test_openBidSchedule.py-->line:111] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:41:39,621 - [test_openBidSchedule.py-->line:112] - ERROR:  :: 500 != 200
+2023-06-16 20:41:39,621 - [test_openBidSchedule.py-->line:113] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 107, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:41:39,773 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:41:39,904 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:41:40,010 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:46:04,222 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 20:46:04,552 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:46:05,336 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:46:05,486 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:46:26,805 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 20:46:26,988 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:46:27,104 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 20:46:27,219 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:46:27,602 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:46:27,750 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:46:27,901 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:46:28,109 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:46:28,328 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:46:28,500 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:46:28,688 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:46:28,984 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:46:29,134 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:46:29,352 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 20:46:29,523 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:46:29,676 - [test_openBidSchedule.py-->line:111] - INFO: 用例：点击【公布投标人】按钮执行不通过
+2023-06-16 20:46:29,676 - [test_openBidSchedule.py-->line:112] - ERROR:  :: 500 != 200
+2023-06-16 20:46:29,676 - [test_openBidSchedule.py-->line:113] - ERROR:  :: 500 != 200
+Traceback (most recent call last):
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 500 != 200
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HaiNanJQG\testcases\test_openBidSchedule.py", line 107, in test_openBidSchedule
+    self.assertEqual(result["code"], expected["code"])
+  File "D:\pycharm\PyCharm Community Edition 2019.1.3\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 500 != 200
+2023-06-16 20:46:29,824 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:46:29,960 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:46:30,080 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 20:52:05,821 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 20:52:06,559 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 20:52:06,679 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 20:52:28,802 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 20:52:29,048 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 20:52:29,182 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 20:52:29,301 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 20:52:29,425 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 20:52:29,732 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 20:52:29,856 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 20:52:30,004 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 20:52:30,256 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 20:52:30,435 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 20:52:30,605 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 20:52:30,785 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 20:52:31,058 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 20:52:31,187 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 20:52:31,390 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 20:52:31,540 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 20:52:31,689 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 20:52:31,872 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 20:52:32,051 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 20:52:32,170 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:02:11,612 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:02:12,380 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:02:12,538 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:02:39,883 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:02:40,145 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:02:40,326 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:02:40,411 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:02:40,526 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:02:40,911 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:02:41,050 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:02:41,237 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:02:41,466 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:02:41,686 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 21:02:41,866 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:02:42,079 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:02:42,307 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 21:02:42,463 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:02:42,714 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:02:42,867 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:02:43,022 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:02:43,174 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:02:43,349 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:02:43,503 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:04:02,868 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:04:03,627 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:04:03,797 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:04:30,014 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:05:44,882 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:05:45,709 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:05:45,860 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:06:17,022 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:06:17,310 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:06:17,447 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:06:17,549 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:06:17,659 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:06:18,067 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:06:18,200 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:06:18,345 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:06:18,558 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:06:18,777 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:06:18,983 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:06:19,243 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 21:06:19,410 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:06:19,629 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:06:19,823 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:06:19,974 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:06:20,170 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:06:20,372 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:06:20,471 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:19:16,042 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:19:16,791 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:19:16,914 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:19:45,685 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:19:46,022 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:19:46,169 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:19:46,270 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:19:46,375 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:19:46,693 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:19:46,800 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:19:46,946 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:19:47,170 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:19:47,366 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:19:47,642 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 21:19:47,760 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:19:47,985 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:19:48,151 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:19:48,319 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:19:48,500 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:19:48,672 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:19:48,770 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:21:00,906 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:21:01,673 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:21:01,788 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:21:29,697 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:21:29,953 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:21:30,081 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:21:30,190 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:21:30,308 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:21:30,639 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:21:30,759 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:21:30,894 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:21:31,091 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:21:31,386 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 21:21:31,520 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:21:31,782 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:21:31,962 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:21:32,142 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:21:32,350 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:21:32,533 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:21:32,716 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:32:39,379 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:32:40,154 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:32:40,283 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:33:01,308 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:33:01,545 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:33:01,696 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:33:01,798 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:33:01,918 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:33:02,253 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:33:02,362 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:33:02,496 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:33:02,718 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:33:02,907 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:33:03,035 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:33:03,347 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:33:03,510 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:33:03,688 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:33:03,880 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:33:04,037 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:33:04,196 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:34:04,509 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:34:05,249 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:34:05,381 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:34:27,145 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:34:27,434 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:34:27,585 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:34:27,680 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:34:27,785 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:34:28,066 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:34:28,177 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:34:28,337 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:34:28,547 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:34:28,758 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:34:28,885 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:34:29,033 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:34:29,230 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:34:29,396 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:34:29,586 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:34:29,696 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:35:44,240 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:35:44,959 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:35:45,096 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:36:07,233 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:36:07,679 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:36:07,848 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:36:08,034 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:36:08,227 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:36:08,542 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:36:08,773 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:36:08,954 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:36:09,224 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:36:09,450 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 21:36:09,632 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:36:09,818 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:37:19,857 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:37:20,627 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:37:20,769 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:37:40,985 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:37:41,232 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:37:41,365 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:37:41,464 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:37:41,566 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:37:41,853 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:37:41,980 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:37:42,114 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:37:42,320 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:37:42,512 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:37:42,636 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:37:42,819 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:37:42,971 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:37:43,183 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:37:43,379 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:37:43,527 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:47:31,543 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:47:32,284 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:47:32,452 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:47:53,153 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:47:53,458 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:47:53,606 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:47:53,724 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:47:53,840 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:47:54,220 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:47:54,347 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:47:54,531 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:47:54,768 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:47:54,957 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 21:47:55,182 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:47:55,391 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:47:55,647 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 21:47:55,771 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:47:55,949 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:47:56,089 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:47:56,242 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:47:56,421 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:47:56,514 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:52:42,385 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:52:43,108 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:52:43,245 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:53:03,520 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:53:03,800 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:53:03,940 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:53:04,044 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:53:04,165 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:53:04,427 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:53:04,546 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:53:04,702 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:53:04,892 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:53:05,111 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 21:53:05,319 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:53:05,510 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:53:05,805 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:53:05,991 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:53:06,176 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:53:06,371 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:53:06,550 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:53:06,645 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过
+2023-06-16 21:54:44,830 - [test_openBidSchedule.py-->line:117] - INFO: 用例：登录成功执行通过
+2023-06-16 21:54:45,517 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询历史项目列表执行通过
+2023-06-16 21:54:45,650 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取文件上传路径执行通过
+2023-06-16 21:55:05,478 - [test_openBidSchedule.py-->line:117] - INFO: 用例：新建项目执行通过
+2023-06-16 21:55:05,771 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询当天项目列表执行通过
+2023-06-16 21:55:05,898 - [test_openBidSchedule.py-->line:117] - INFO: 用例：获取进入项目跳转路径执行通过
+2023-06-16 21:55:06,009 - [test_openBidSchedule.py-->line:117] - INFO: 用例：进入项目执行通过
+2023-06-16 21:55:06,128 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开【新增投标单位】弹框执行通过
+2023-06-16 21:55:06,405 - [test_openBidSchedule.py-->line:117] - INFO: 用例：添加投标人成功执行通过
+2023-06-16 21:55:06,535 - [test_openBidSchedule.py-->line:117] - INFO: 用例：重复添加投标人执行通过
+2023-06-16 21:55:06,660 - [test_openBidSchedule.py-->line:117] - INFO: 用例：查询投标人列表执行通过
+2023-06-16 21:55:06,872 - [test_openBidSchedule.py-->line:117] - INFO: 用例：投标文件已递交执行通过
+2023-06-16 21:55:07,127 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未要求执行通过
+2023-06-16 21:55:07,329 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金未递交执行通过
+2023-06-16 21:55:07,515 - [test_openBidSchedule.py-->line:117] - INFO: 用例：保证金已递交执行通过
+2023-06-16 21:55:07,757 - [test_openBidSchedule.py-->line:117] - INFO: 用例：确认投标人执行通过
+2023-06-16 21:55:07,912 - [test_openBidSchedule.py-->line:117] - INFO: 用例：撤销确认执行通过
+2023-06-16 21:55:08,140 - [test_openBidSchedule.py-->line:117] - INFO: 用例：全部确认执行通过
+2023-06-16 21:55:08,300 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【公布投标人】页执行通过
+2023-06-16 21:55:08,460 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【公布投标人】按钮执行通过
+2023-06-16 21:55:08,624 - [test_openBidSchedule.py-->line:117] - INFO: 用例：跳转到【投标文件解密】页执行通过
+2023-06-16 21:55:08,814 - [test_openBidSchedule.py-->line:117] - INFO: 用例：点击【开始解密】执行通过
+2023-06-16 21:55:08,913 - [test_openBidSchedule.py-->line:117] - INFO: 用例：打开文件上传弹框执行通过

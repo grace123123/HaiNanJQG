@@ -29,16 +29,26 @@ class TestOpenBidSchedule(unittest.TestCase):
         method = case["method"]
         url = replace_data(conf.get_str("env", "url") + case["url"])
 
-        if case["interface"] == "getJumpUrl" or \
-                case["interface"] == "bidderList" or\
-                case["interface"] == "tFileUpdateSignData" or\
-                case["interface"] == "bUpdateSignDataNy" or\
-                case["interface"] == "bUpdateSignDataNd"or\
-                case["interface"] == "bUpdateSignDataYd" or\
-                case["interface"] == "updateSignDataConfirm" or\
-                case["interface"] == "signAllData" or\
-                case["interface"] == "pubPage":
+        # getJumpUrl    获取进入项目跳转路径
+        # bidderList    查询投标人列表
+        # tFileUpdateSignData    投标文件已递交
+        # bUpdateSignDataNy    保证金未要求
+        # bUpdateSignDataNd    保证金未递交
+        # bUpdateSignDataYd    保证金已递交
+        # updateSignDataConfirm    确认投标人
+        # signAllData    全部确认
+        # pubPage    跳转到【公布投标人】页
 
+        # if case["interface"] == "getJumpUrl" or \
+        #         case["interface"] == "bidderList" or\
+        #         case["interface"] == "tFileUpdateSignData" or\
+        #         case["interface"] == "bUpdateSignDataNy" or\
+        #         case["interface"] == "bUpdateSignDataNd"or\
+        #         case["interface"] == "bUpdateSignDataYd" or\
+        #         case["interface"] == "updateSignDataConfirm" or\
+        #         case["interface"] == "signAllData" or\
+        #         case["interface"] == "pubPage":
+        if case["method"] == "post":
             data = replace_data(case["data"]).encode('UTF-8')
             response = self.http.send(headers=headers, method=method, url=url, data=data)
         elif case["method"] == "get":
@@ -67,15 +77,23 @@ class TestOpenBidSchedule(unittest.TestCase):
         elif case["interface"] == "createProjectByTenderFile":
             projectId = jsonpath.jsonpath(result, "$..projectId")[0]
             bidSectionId = jsonpath.jsonpath(result, "$..bidSectionId")[0]
+            print("*******************bidSectionId*******************")
+            print(bidSectionId)
+            print("******************bidSectionId********************")
             setattr(TestData, "projectId", projectId)
             setattr(TestData, "bidSectionId", bidSectionId)
             sql = case["check_sql"].format(getattr(TestData, "projectId"))
-        elif case["interface"]=="projectlist":
+        elif case["interface"]=="projectlistToday":
             domainId=jsonpath.jsonpath(result,"$..domainId")[0]
-            setattr(TestData,"domainId",domainId)
+            print("*******************domainId*******************")
             print(domainId)
+            print("******************domainId********************")
+            setattr(TestData,"domainId",domainId)
         elif case["interface"]=="getBidSectionBriefList":
             openBidId=jsonpath.jsonpath(result,"$..openBidId")[0]
+            print("**************openBidId************************")
+            print(openBidId)
+            print("**************openBidId************************")
             setattr(TestData,"openBidId",openBidId)
         elif case["interface"]=="bidderList":
             bidderId=jsonpath.jsonpath(result,"$..bidderId")[0]

@@ -1,10 +1,3 @@
-
-#encoding: utf-8
-
-# import sys
-# path='D:\HaiNanJQG'
-# sys.path.append(path)
-
 import unittest
 
 from library.HTMLTestRunnerNew import HTMLTestRunner
