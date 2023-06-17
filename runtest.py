@@ -44,7 +44,7 @@ report_path=os.path.join(REPORT_DIR,filename)
 runner=HTMLTestRunner(stream=open(report_path,"wb"),   #打开一个报告文件，将句柄传给stream，wb覆盖写入模式
                                           tester="yuxx",   #报告中显示的测试人员
                                           description="报告的描述信息",   #报告中显示的描述信息
-                                          title="报告的标题")   #报告的标题
+                                          title="海南机器管_接口自动化测试报告")   #报告的标题
 
 #第四步：使用启动器去执行测试套件
 runner.run(suite)
