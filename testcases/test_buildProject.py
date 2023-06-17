@@ -64,14 +64,14 @@ class TestBuildProject(unittest.TestCase):
         if case["interface"] == "login":
             cookieValue = jsonpath.jsonpath(result, "$..cookieValue")[0]
             setattr(TestData, "cookie", cookieValue)
-        elif case["interface"]=="getUploadUrl":
+        if case["interface"]=="getUploadUrl":
             logicPath = jsonpath.jsonpath(result, "$..logicPath")[0]
             setattr(TestData, "logicPath", logicPath)
             print("logicPath:"+logicPath)
-        elif case["interface"]=="uploadFile":
+        if case["interface"]=="uploadFile":
             fileId=jsonpath.jsonpath(result,"$..fileld")[0]
             setattr(TestData,"fileId",fileId)
-        if case["interface"] == "createProjectByTenderFile":
+        elif case["interface"] == "createProjectByTenderFile":
             projectId = jsonpath.jsonpath(result, "$..projectId")[0]
             setattr(TestData, "projectId", projectId)
             sql=replace_data(case["check_sql"])

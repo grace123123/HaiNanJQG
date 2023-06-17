@@ -82,7 +82,7 @@ class TestOpenBidSchedule(unittest.TestCase):
             print("******************bidSectionId********************")
             setattr(TestData, "projectId", projectId)
             setattr(TestData, "bidSectionId", bidSectionId)
-            sql = case["check_sql"].format(getattr(TestData, "projectId"))
+            #sql = case["check_sql"].format(getattr(TestData, "projectId"))
         elif case["interface"]=="projectlistToday":
             domainId=jsonpath.jsonpath(result,"$..domainId")[0]
             print("*******************domainId*******************")
@@ -102,6 +102,10 @@ class TestOpenBidSchedule(unittest.TestCase):
             setattr(TestData,"bidderName",bidderName)
             singedId=jsonpath.jsonpath(result,"$..singedId")[0]
             setattr(TestData,"singedId",singedId)
+        elif case["interface"] == "endOpenBid":
+            sql=replace_data(case["check_sql"])
+            print(sql)
+            self.db.delete(sql)
 
         try:
             self.assertEqual(result["code"], expected["code"])
