@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="553ac103-6036-4f47-836c-01ce79c8e14d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/conf.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cases.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/test1.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/test1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/水利监理-一次平均.GZBS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/水利监理.GTBS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_buildProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/2test_buildProject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/1test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/test_openBidSchedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_openBidSchedule.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcases/test_openBidSchedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-839">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="126">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -131,6 +123,11 @@
             <path>
               <item name="HaiNanJQG" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaiNanJQG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HaiNanJQG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HaiNanJQG" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HaiNanJQG" type="b2602c69:ProjectViewProjectNode" />
@@ -430,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687008608137</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="修改">
+      <created>1688197190728</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688197190728</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -475,14 +479,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48965517" visible="true" weight="0.24543288" />
       <window_info id="Structure" order="1" sideWeight="0.5103448" side_tool="true" weight="0.10325655" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3321492" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.4742451" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.42806393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22912966" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -531,7 +535,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/testcases/test_openBidSchedule.py</url>
-          <line>48</line>
+          <line>46</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
@@ -739,9 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -853,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcases/test_openBidSchedule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-839">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="126">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

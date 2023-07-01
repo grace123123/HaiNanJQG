@@ -9,8 +9,6 @@ from common.logger import my_log
 import jsonpath
 from common.parametric import TestData, replace_data
 from common.db import HandleDB
-from common.myEncoder import MyEncoder
-import json
 
 
 @ddt
