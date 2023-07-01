@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="553ac103-6036-4f47-836c-01ce79c8e14d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/conf/conf.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cases.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/test1.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/test1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/水利监理-一次平均.GZBS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/水利监理.GTBS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_buildProject.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/2test_buildProject.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/1test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test_openBidSchedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_openBidSchedule.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,31 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/runtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcases/test_buildProject.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="79" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcases/test_openBidSchedule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="104" column="47" lean-forward="true" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+            <state relative-caret-position="-839">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -46,15 +34,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reports/report.html">
+        <entry file="file://$PROJECT_DIR$/conf/conf.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#4554#4596#0" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -70,10 +53,33 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>domainId</find>
       <find>logicPath</find>
-      <find>openBidId</find>
       <find>bidSectionId</find>
+      <find>domainId</find>
+      <find>07041c99a61de38cde8a30fd9695f0f3</find>
+      <find>81e3010a4b7f430c81b5880519c31c09</find>
+      <find>***********************bidderId*****************************</find>
+      <find>singedId</find>
+      <find>openBidId</find>
+      <find>*********************updateDigitalEnvelope*****************************</find>
+      <find>{'msg': '操作成功', 'code': '200', 'obj': {'fileName': '10000.GTBS', 'isDelete': 0, 'filePath': '/gbes/2023-06-28', 'fileMd5': '90f1e209bf0b785b3a0ba7a40531715d', 'fileExt': '.GTBS', 'diskFileName': '10000@a1b2c78e.GTBS', 'parentFileId': '0009c8945a234ce2bb7dc6759b7c5fbb', 'createTime': '2023-06-28 00:00:00.0', 'diskFilePath': '/data/gbes-new/file/gbes/2023-06-28', 'fileSize': 1133543, 'fileType': 2, 'fileId': 'f49df2588db94e9daa4684716b08bfd4', 'operTime': '2023-06-28 22:02:20.0'}}</find>
+      <find>************************domainId****************************</find>
+      <find>***********************bidSectionId*****************************</find>
+      <find>***********************id*****************************</find>
+      <find>bidderName1</find>
+      <find>***********************bidderName1*****************************</find>
+      <find>degitalEnvelope_getDigitalEnvelope</find>
+      <find>***********************result*****************************</find>
+      <find>921cbe392c577ab842002be68090eefa</find>
+      <find>bidderId</find>
+      <find>***********************openBidId*****************************</find>
+      <find>***********************domainId*****************************</find>
+      <find>***********************fileUrl*****************************</find>
+      <find>***********************fileUrlAll*****************************</find>
+      <find>usercode</find>
+      <find>fileId</find>
+      <find>headers3</find>
+      <find>2618028d2e5744cc9fd4f468a3b870f6</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -85,11 +91,8 @@
       <list>
         <option value="$PROJECT_DIR$/testcases/est_buildProject.py" />
         <option value="$PROJECT_DIR$/common/contents.py" />
-        <option value="$PROJECT_DIR$/conf/conf.ini" />
-        <option value="$PROJECT_DIR$/common/request.py" />
         <option value="$PROJECT_DIR$/resources/111.py" />
         <option value="$PROJECT_DIR$/resources/2.py" />
-        <option value="$PROJECT_DIR$/testcases/1.py" />
         <option value="$PROJECT_DIR$/common/db.py" />
         <option value="$PROJECT_DIR$/common/logger.py" />
         <option value="$PROJECT_DIR$/common/parametric.py" />
@@ -97,9 +100,16 @@
         <option value="$PROJECT_DIR$/common/config.py" />
         <option value="$PROJECT_DIR$/testcases/test_login.py" />
         <option value="$PROJECT_DIR$/testcases/test_searchProjectList.py" />
-        <option value="$PROJECT_DIR$/testcases/test_buildProject.py" />
-        <option value="$PROJECT_DIR$/testcases/test_openBidSchedule.py" />
         <option value="$PROJECT_DIR$/runtest.py" />
+        <option value="$PROJECT_DIR$/common/request.py" />
+        <option value="$PROJECT_DIR$/testcases/test_buildProject.py" />
+        <option value="$PROJECT_DIR$/testcases/test_toubiao.py" />
+        <option value="$PROJECT_DIR$/common/myEncoder.py" />
+        <option value="$PROJECT_DIR$/testcases/test_jiemi.py" />
+        <option value="$PROJECT_DIR$/testcases/3test_openBidSchedule.py" />
+        <option value="$PROJECT_DIR$/testcases/1.py" />
+        <option value="$PROJECT_DIR$/conf/conf.ini" />
+        <option value="$PROJECT_DIR$/testcases/test_openBidSchedule.py" />
       </list>
     </option>
   </component>
@@ -115,7 +125,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,17 +150,23 @@
             <path>
               <item name="HaiNanJQG" type="b2602c69:ProjectViewProjectNode" />
               <item name="HaiNanJQG" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HaiNanJQG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HaiNanJQG" type="462c0819:PsiDirectoryNode" />
               <item name="testcases" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/testcases" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyDebuggerOptionsProvider">
@@ -163,8 +178,8 @@
       <recent name="D:\HaiNanJQG\file" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\HaiNanJQG\testcases" />
       <recent name="D:\HaiNanJQG\resources" />
+      <recent name="D:\HaiNanJQG\testcases" />
       <recent name="D:\HaiNanJQG\library" />
       <recent name="D:\HaiNanJQG\data" />
       <recent name="D:\HaiNanJQG\common" />
@@ -183,6 +198,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests in test_openBidSchedule.py">
+    <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HaiNanJQG" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="runtest" type="PythonConfigurationType" factoryName="Python">
       <module name="HaiNanJQG" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,7 +240,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_buildProject.TestBuildProject" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in 2test_buildProject.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="HaiNanJQG" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -214,11 +250,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_buildProject.TestBuildProject&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/2test_buildProject.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_buildProject.TestBuildProject.test_buildProject" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in D:/HaiNanJQG/testcases/test_toubiao.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="HaiNanJQG" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -228,11 +264,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_buildProject.TestBuildProject.test_buildProject&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/test_toubiao.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_openBidSchedule.TestOpenBidSchedule.test_openBidSchedule" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_jiemi.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="HaiNanJQG" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -242,21 +278,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_openBidSchedule.TestOpenBidSchedule.test_openBidSchedule&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_buildProject.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="HaiNanJQG" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/test_buildProject.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/test_jiemi.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -276,19 +298,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.runtest" />
-      <item itemvalue="Python tests.Unittests in test_buildProject.py" />
+      <item itemvalue="Python.1" />
+      <item itemvalue="Python tests.Unittests in 2test_buildProject.py" />
       <item itemvalue="Python tests.Unittests in test_openBidSchedule.py" />
-      <item itemvalue="Python tests.Unittests for test_openBidSchedule.TestOpenBidSchedule.test_openBidSchedule" />
-      <item itemvalue="Python tests.Unittests for test_buildProject.TestBuildProject" />
-      <item itemvalue="Python tests.Unittests for test_buildProject.TestBuildProject.test_buildProject" />
+      <item itemvalue="Python tests.Unittests in D:/HaiNanJQG/testcases/test_toubiao.py" />
+      <item itemvalue="Python tests.Unittests in test_jiemi.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests in test_openBidSchedule.py" />
-        <item itemvalue="Python tests.Unittests in test_buildProject.py" />
-        <item itemvalue="Python tests.Unittests for test_buildProject.TestBuildProject.test_buildProject" />
-        <item itemvalue="Python tests.Unittests for test_buildProject.TestBuildProject" />
-        <item itemvalue="Python tests.Unittests for test_openBidSchedule.TestOpenBidSchedule.test_openBidSchedule" />
+        <item itemvalue="Python.1" />
+        <item itemvalue="Python tests.Unittests in test_jiemi.py" />
+        <item itemvalue="Python tests.Unittests in D:/HaiNanJQG/testcases/test_toubiao.py" />
+        <item itemvalue="Python tests.Unittests in 2test_buildProject.py" />
       </list>
     </recent_temporary>
   </component>
@@ -401,38 +423,45 @@
       <option name="project" value="LOCAL" />
       <updated>1687008071256</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="修改">
+      <created>1687008608137</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687008608137</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 24m 57s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 27m 21s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 36m 39s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 37m 25s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 37m 59s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 38m 51s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_buildProject_py - 2023.06.16 at 22h 40m 10s.xml">
-      <configuration name="Unittests in test_buildProject.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.06.17 at 11h 33m 08s.xml">
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 00h 37m 54s.xml">
       <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.06.17 at 11h 35m 48s.xml">
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 00h 42m 23s.xml">
       <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.06.17 at 12h 42m 52s.xml">
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 13h 48m 37s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 13h 50m 39s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 15h 17m 59s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 15h 21m 13s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 15h 23m 59s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 15h 26m 47s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 15h 30m 04s.xml">
+      <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_openBidSchedule_py - 2023.07.01 at 15h 36m 01s.xml">
       <configuration name="Unittests in test_openBidSchedule.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -446,15 +475,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.2104845" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48965517" visible="true" weight="0.24543288" />
+      <window_info id="Structure" order="1" sideWeight="0.5103448" side_tool="true" weight="0.10325655" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3321492" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988086" visible="true" weight="0.4742451" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22912966" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.62166965" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.63765544" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50119144" side_tool="true" weight="0.54174066" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3285968" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.2104845" />
       <window_info id="Structure" order="1" sideWeight="0.50212765" side_tool="true" weight="0.17394757" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3321492" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6678508" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3374778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6625222" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -466,7 +513,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2023-3-8完结版" />
@@ -478,20 +525,21 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcases/test_login.py</url>
+          <url>file://$PROJECT_DIR$/testcases/1test_login.py</url>
           <line>32</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/testcases/test_openBidSchedule.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="29" />
+          <line>48</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="self" language="Python" />
+        <watch expression="expected" />
       </configuration>
     </watches-manager>
   </component>
@@ -505,112 +553,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log/test1.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="198">
-          <caret line="1054" column="30" lean-forward="true" selection-start-line="1054" selection-start-column="30" selection-end-line="1054" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/sessions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="366" selection-start-line="366" selection-end-line="366" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="814" selection-start-line="814" selection-end-line="814" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/structures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/_collections_abc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="832" selection-start-line="832" selection-end-line="832" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/pymysql/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="1074" selection-start-line="1074" selection-end-line="1074" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="307" selection-start-line="307" selection-end-line="307" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/runner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="662" selection-start-line="662" selection-end-line="662" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ddt.py" />
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="285" selection-start-line="285" selection-end-line="285" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/sre_compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="763" selection-start-line="763" selection-end-line="763" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/Lib/sre_parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -625,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/urllib3/fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -641,7 +576,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/111.py" />
     <entry file="file://$PROJECT_DIR$/resources/2.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/1.py" />
     <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/lib/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -651,13 +585,6 @@
     <entry file="file://$PROJECT_DIR$/lib/HTMLTestRunnerNew.py" />
     <entry file="file://$PROJECT_DIR$/library/HTMLTestRunnerNew.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/contents.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/db.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -691,7 +618,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_login.py">
+    <entry file="file://$PROJECT_DIR$/testcases/1test_login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
@@ -708,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/send_email.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -724,18 +644,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/test_buildProject.py">
+    <entry file="file://$USER_HOME$/Downloads/test_buildProject.py" />
+    <entry file="file://$PROJECT_DIR$/testcases/test_searchProjectList.py" />
+    <entry file="file://$PROJECT_DIR$/common/contents.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1080">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="468">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
+        <state relative-caret-position="-234">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -743,57 +663,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/ddt.py">
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/abc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        <state relative-caret-position="81">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/parametric.py">
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/_collections_abc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="73">
+          <caret line="847" selection-start-line="847" selection-end-line="847" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/conf.ini">
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="106">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_searchProjectList.py" />
-    <entry file="file://$PROJECT_DIR$/reports/report.html">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_unittest_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#4554#4596#0" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_buildProject.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="73" column="8" lean-forward="true" selection-start-line="73" selection-start-column="8" selection-end-line="79" />
+        <state relative-caret-position="-5305">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/runner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/2test_buildProject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="89" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_openBidSchedule.py">
+    <entry file="file://$PROJECT_DIR$/testcases/test_toubiao.py" />
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/contextlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="104" column="47" lean-forward="true" selection-start-line="104" selection-start-column="47" selection-end-line="104" selection-end-column="47" />
+        <state relative-caret-position="31">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/myEncoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -802,8 +747,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="46" column="64" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
+        <state relative-caret-position="684">
+          <caret line="46" column="61" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/parametric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="242" selection-start-line="242" selection-end-line="242" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="166" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="366" selection-start-line="366" selection-end-line="366" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="814" selection-start-line="814" selection-end-line="814" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/requests/structures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/ddt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="662" selection-start-line="662" selection-end-line="662" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Python/Lib/unittest/suite.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_runner_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_jiemi.py" />
+    <entry file="file://$PROJECT_DIR$/testcases/1.py" />
+    <entry file="file://$PROJECT_DIR$/resources/控制价.kzj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_openBidSchedule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-839">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="60" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
         </state>
       </provider>
     </entry>

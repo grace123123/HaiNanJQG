@@ -1,4 +1,5 @@
 import unittest
+
 from library.ddt import ddt, data
 from common.readexcel import ReadExcel
 import os
@@ -9,7 +10,8 @@ from common.logger import my_log
 import jsonpath
 from common.parametric import TestData, replace_data
 from common.db import HandleDB
-
+from urllib3 import encode_multipart_formdata
+import request
 
 @ddt
 class TestBuildProject(unittest.TestCase):
@@ -22,28 +24,24 @@ class TestBuildProject(unittest.TestCase):
     @data(*cases)
     def test_buildProject(self, case):
 
+        global files
         if case["interface"] == "uploadFile":
-            headers = eval(conf.get_str("env", "headers1"))
-            url = case["url"]
+            headers = eval(conf.get_str("env", "headers2"))
+            url= case["url"]
 
-            # files={"file": ("", open(r"F:\pdf_file.pdf", "rb"), "pdf")}
-            # file：固定值
-            # ""：元组第一个值为文件名称，没有则取None
-            # open(r"F:\pdf_file.pdf", "rb")：若第一个值非None，则取文件open打开的二进制流，否则直接写文件路径，如"F:\pdf_file.pdf"
-            # pdf：文件类型，请求参数里一般会有，比如这里Content-Type: application/octet-stream
+            files={"file":("水利监理-一次平均.GZBS",open("D:\\HaiNanJQG\\resources\\水利监理-一次平均.GZBS", "rb"),"application/octet-stream")}
+            data={
+                # "name": "file",
+                # "filename": "水利监理-一次平均.GZBS",
+                # "Content-Type": "application/octet-stream",
+                # "Content-Disposition": "form-data",
+                "json":"{'appId':'gbes','secretKey':'12345','fileMd5':'c02a4c073fcac518cdd6ed22fefce308','logicPath':'db08979d3c774a06bdaaa7fa4c54fa80/bidSectionId/openBid/tenderFile/'}"
+                 }
 
-            file_path = os.path.join(RESOURCES_DIR, "zhao.GZBS")
-            global file
-            file= ("file",("zhao.GZBS",open(r"D:\workFile\jiqiguanshuili\zhao.GZBS", "rb"),"application/octet-stream"))
-            #file= {'file',open(r'D:\workFile\jiqiguanshuili\zhao.GZBS', 'rb')}
-
-            global data
-            data = eval(replace_data(case["data"]))
-            print(data)
         else:
             headers = eval(conf.get_str("env", "headers"))
-            url = conf.get_str("env", "url") + case["url"]
-            data = eval(case["data"])
+            url= conf.get_str("env", "url") + case["url"]
+            data= eval(case["data"])
 
         if case["interface"] != "login":
             headers["Authorization"] = getattr(TestData, "cookie")
@@ -52,11 +50,10 @@ class TestBuildProject(unittest.TestCase):
         expected = eval(case["expected"])
 
         if case["interface"] == "uploadFile":
-            response = self.http.send(headers=headers, method=method, url=url,files=file,data=data)
+            response = self.http.send(headers=headers,method=method, url=url,files=files,data=data)
         else:
             response = self.http.send(headers=headers, method=method, url=url, json=data)
         result = response.json()
-        print(response.text)
 
         print("预期结果：{}".format(expected))
         print("实际结果：{}".format(result))
@@ -67,10 +64,11 @@ class TestBuildProject(unittest.TestCase):
         if case["interface"]=="getUploadUrl":
             logicPath = jsonpath.jsonpath(result, "$..logicPath")[0]
             setattr(TestData, "logicPath", logicPath)
-            print("logicPath:"+logicPath)
         if case["interface"]=="uploadFile":
-            fileId=jsonpath.jsonpath(result,"$..fileld")[0]
+            fileId=jsonpath.jsonpath(result,"$..fileld")
+            filePath=jsonpath.jsonpath(result,"$..filePath")
             setattr(TestData,"fileId",fileId)
+            setattr(TestData,"filePath",filePath)
         elif case["interface"] == "createProjectByTenderFile":
             projectId = jsonpath.jsonpath(result, "$..projectId")[0]
             setattr(TestData, "projectId", projectId)
