@@ -18,7 +18,7 @@ def replace_data(data):
         key=res.group(1)
         try:
              # 根据替换内容的数据项去配置文件中找到对应的内容，进行替换
-             data = data.replace(item, conf.get_str("test_data", key))
+             data = data.replace(item, conf.get_str("params", key))
         except:
             data=data.replace(item, getattr(TestData,key))
     #返回替换好的数据

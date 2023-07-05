@@ -12,8 +12,8 @@ class MyConf:
         :param filename:配置文件
         :param encoding:文件编码方式
         """
-        self.filename = filename;
-        self.encoding = encoding;
+        self.filename = filename
+        self.encoding = encoding
         # 创建一个文件细解析器对象
         self.conf = ConfigParser()
         # 使用解析器对象，加载配置文件中的内容
@@ -72,9 +72,14 @@ class MyConf:
         # 保存到文件
         self.conf.write(open(self.filename, "w", encoding=self.encoding))
 
+    def delete_data(self,section,option):
+
+        self.conf.remove_option(section,option)
+
 #获取配置文件的绝对路径
 #conf_path=r"D:\python24\py24_test_project\conf\conf.ini"
 conf_path=os.path.join(CONF_DIR,"conf.ini")
+print(conf_path)
 conf=MyConf(conf_path)
 
 
